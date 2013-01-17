@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>How I Re-discovered S-Expression</title>
+    <link rel="home" href="index.html" title="Lazy Quiche" />
+    <style>
+      .header-title{text-align:center;}
+      pre{font-family: "Menlo", "Courier", monospace;}
+      .slide{width:480px;}
+      #content{width:90%; margin-left:5%;}
+      .right {float:right;margin-right:5%}
+    </style>
+  </head>
+  <body>
+    <p class="header-title"><strong>How I Re-discovered S-Expression</strong> -- Say NO to precedence</p>
+    <hr />
+    <div id="content">
+      December 30th 2012 Minori Yamashita &lt;ympbyc@gmail.com&gt;
+      <h1>How I Re-discovered S-Expression</h1>
+      <h2>Steeling stuff from Haskell</h2>
+      <p>So I wanted to implement a language that is inspired by Haskell. I wanted to understand fully how currying and lazy evaluation works.</p>
+      <p>I started by creating a set of syntax for the language. At first I thought it would look cool if we could write functions like</p>
+      <pre><code>
+cons := head -> tail -> f -> f hed tail
+car  := ls -> ls (h -> t -> h)
+cdr  := ls -> ls (h -> t -> t)
+      </code></pre>
+      <p>You might have noticed it is an immitation of type signature syntax in Haskell. </p>
+      <h2>Associativity and Precedence</h2>
+      <p>While it looks nice we quickly encounter the problem of associativity. I always disliked the <em>order of precedence</em> in computer languages.
+It simply makes the code unreadable. Here is the list of things I don't like about it:</p>
+      <dl>
+	<dt>It makes operators too special</dt>
+	<dd>In functional languages everything is supporsed to be a function. Haskell users might insist that operators are in fact functions. Yes they are but they are undoubtedly special cases in terms of syntax. Every operator has a different associativiy and precedence hence behaviour. In this sense, every operator can be seen as a syntactic form.</dd>
+	<dt>New syntax have to be added</dt>
+	<dd>In order to define the precedence of operators, a new syntactic form have to be added (in Haskell infix* does it). Adding syntax that're not justified to the language is a huge sin I believe.</dd>
+	<dt>It crashes your brain</dt>
+	<dd>How are we suppose to remember all the behaviours of unpronounceable symbols that appear randomly in the source code?</dd>
+      </dl>
+      <p>For the reasons above, our language would never have the <em>order of precedence</em>.
+      <h2>Seeking the Answer</h2>
+      <p>Rejecting the order of precedence would only mean one thing -- parenthesis</p>
+      <pre><code>
+fact := n -> n = 0 1 (n * (fact (n - 1)))
+      </code></pre>
+      <p>A new question arises. Why are we treating operators specially in the first place? If operators are functions, shouldn't they follow the same convention as of normal functions? My answer was yes.</p>
+      <pre><code>
+fact := n -> = n 0 1 (* n (fact (- n 1)))
+      </code></pre>
+      <p>Hello S-Expression!</p>
+      <h2>Coming Home</h2>
+      <p>Lets accept this. If we seek a <strong>clean</strong> set of syntax, we can not get away from S-expression [1].</p>
+      <pre><code>
+(:= (fact n) (= n 0 1 (* n (fact (- n 1)))))
+      </code></pre>
+      <p>After a long trip I came back to the good old S expressions. With a few souvenirs from the Haskell world. Our functions are now curried; and applications are lazy. Lets exploit these new features a bit aye?</p>
+      <pre><code>
+(:= (true  x y) x)
+(:= (false x y) y)
+(:= (if x y z) (x y z))
+(:= (cool? x) true)
+(if (cool? 'me) "Yeahhhh" "Curse you!"))
+(cool? 'you "Yahoooo" "Red Baron!")
+      </code></pre>
+      <p>We no longer need <em>if</em> special form! Furthermore, we actually don't even need <em>if</em>! Because arguments to functions are evaluated lazily, it is guaranteed that unmatching clause will never get evaluated.</p>
+      <pre><code>
+(:= (on) eq?)
+
+;;message passing style. see SICP
+(:= (animal name voice =>)
+  (on 'name   => name
+  (on 'talkTo => (-> (x) (++ (++ (++ (++ name " said ") voice) " to ") x))
+  nil)))
+
+(:= (felix) (animal "Felix the Cat" "meooow"))
+(felix 'name) ;;"Felix the Cat"
+(felix 'talkTo "me") ;;"Felix the Cat said meooow to me"
+      </code></pre>
+      <p>Notice the last line? In Lisp we would have to write ((felix 'talkTo) "me") which sucks. By dropping variable number arguments, we could write real message passing in S expression.</p>
+      <h2>Conclusion</h2>
+      <p>I started my journey from Haskell by taking its two important features, laziness and currying. I criticized the problem with the <em>order of precedence</em> many imperative languages and ISWIM based languages such as ML and Haskell uses, and how rejecting it leads to re-discovery of S-expression. Finally I showed that combining S-expression and features of modern functional languages makes S-expression more interesting than ever. Let me end this essay with a quote I just made up. </p>
+      <blockquote><strong><em>"Real programmers don't use parsers. They write AST by hand."</em></strong><br />~ A brainwashed Lisp programmer on Lisp</blockquote>
+      
+      <h2>Notes</h2>
+1: I wil talk about <strong>Forth</strong> and other concatinative languages some day later
+    </div>
+    <hr>
+Real programmers don't use CSS
+<div class="right"><a href="/">up</a>
+  </body>
+</html>

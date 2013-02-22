@@ -88,8 +88,8 @@ define_method can_play, [musician, instrument], (m, i) ->
       </code></pre>
 
       <h2>Extension for Functional Programming</h2>
-      <p>I extended JS-CLOS with some feature to support some FP features.
-         One is for dipatching methods on equality of values. This allows us to do something like this:</p>
+      <p>I extended JS-CLOS with some features to support some FP features.
+         One is for dispatching methods on equality of values. This allows us to do something like this:</p>
       <pre><code>
 fib = define_generic()
 
@@ -99,7 +99,7 @@ define_method fib, ['number'], (n) ->
   fib (n - 1) + fib (n - 2)
       </code></pre>
 
-      <p>Another such feature is the suppot for multiple constructors. With this, you can write ML style datatypes.</p>
+      <p>Another such feature is the support for multiple constructors. With this, you can write ML style datatypes.</p>
       <pre><code>
 color = define_class()
 Red   = define_constructor color
@@ -113,6 +113,8 @@ is_a Red(), color
 is_a (WebColor '#ff0033'), color
 #=>true
       </code></pre>
+
+      <p>More sophisticated examples will show up in my gist. Follow me if you are interested.</p>
 
       <h2>Thank you for reading. Learn it and hack on!</h2>
 

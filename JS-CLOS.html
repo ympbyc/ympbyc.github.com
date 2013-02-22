@@ -22,7 +22,7 @@
 
       <h1>JS-CLOS</h1>
       <h2>What is CLOS in the first place?</h2>
-      <p>Common Lisp Object System (CLOS) is a way to do OOP in Lisp. In CLOS, objects are basically just mutable hash-tables holding values. Methods are not included in these hash-tables. Instead, what's called methods in CLOS are also known as <b>generic functions</b>. <b>Generic functions</b> are functions that work on multiple classes, a combination of them.</p>
+      <p>Common Lisp Object System (CLOS) is a way to do OOP in Lisp. In CLOS, objects are basically just mutable hash-tables holding values. Methods are not included in these hash-tables. Instead, what's called methods in CLOS are implemented as <b>generic functions</b>. <b>Generic functions</b> are functions that work on multiple classes, a combination of them.</p>
       <p>Heres a sample code in Tklos, a variant of CLOS.</p>
       <pre><code>
 ;; a class representing instruments
@@ -108,7 +108,7 @@ Blue  = define_constructor color
 WebColor = define_constructor color, (str) ->
   make(color, {webCol:str})
 
-is_a Red(), color 
+is_a Red(), color
 #=>true
 is_a (WebColor '#ff0033'), color
 #=>true

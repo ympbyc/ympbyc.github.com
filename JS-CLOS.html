@@ -46,7 +46,7 @@
 ;; a flute-player can play the flute
 (define-method can-play? ((f &lt;flute-player&gt;) (f &lt;flute&gt;))
   #t)
-;; a flute-player can not play the flute
+;; a flute-player can not play other instruments
 (define-method can-play? ((f &lt;flute-player&gt;) (i &lt;instrument&gt;))
   #f)
 
@@ -79,7 +79,7 @@ can_play = define_generic()
 ## a flute_player can play a flute
 define_method can_play, [flute_player, flute], -> true
 
-## a flute-player can not play a flute
+## a flute-player can not play other instruments
 define_method can_play, [flute_player, instrument], -> false
 
 ## a musician can play an instrument when the musician has the instrument

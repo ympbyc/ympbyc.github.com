@@ -26,10 +26,10 @@
       <p>Heres a sample code in Tklos, a variant of CLOS.</p>
       <pre><code>
 ;; a class representing instruments
-(define-class &lt;instrument&gt; ())
+(define-class &lt;instrument&gt; () ())
 
 ;; flute inherits from &lt;instrument&gt;
-(define-class &lt;flute&gt; (&lt;instrument&gt;))
+(define-class &lt;flute&gt; (&lt;instrument&gt;) ())
 
 ;; musicians have a name and the instrument they play
 (define-class &lt;musician&gt; ()

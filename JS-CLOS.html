@@ -44,10 +44,10 @@
 (define-generic can-play?)
 
 ;; a flute-player can play the flute
-(define-method can-play? ((f &lt;flute-player&gt;) (f &lt;flute&gt;))
+(define-method can-play? ((fp &lt;flute-player&gt;) (f &lt;flute&gt;))
   #t)
 ;; a flute-player can not play other instruments
-(define-method can-play? ((f &lt;flute-player&gt;) (i &lt;instrument&gt;))
+(define-method can-play? ((fp &lt;flute-player&gt;) (i &lt;instrument&gt;))
   #f)
 
 ;; a musician can play an instrument when the musician has the instrument
@@ -88,7 +88,7 @@ define_method can_play, [musician, instrument], (m, i) ->
       </code></pre>
 
       <h2>Extension for Functional Programming</h2>
-      <p>I extended JS-CLOS with some features to support some functional style programming.
+      <p>I extended JS-CLOS with some features to support functional style programming.
          One is for dispatching methods on equality of values. This allows us to do something like this:</p>
       <pre><code>
 fib = define_generic()

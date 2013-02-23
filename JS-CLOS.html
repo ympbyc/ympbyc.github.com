@@ -56,13 +56,13 @@
       </code></pre>
 
       <h2>Implementing it in JS</h2>
-      <p>I found a repository named JS-CLOS on github that someone in Russia has abandoned a year ago unfinished. I forked and made some commits to it. I ended up rewriting almost every line and believe I've come up with a usable solution. Here's what's equivalent to the code above in JS-CLOS:</p>
+      <p>I found a repository named JS-CLOS on github that someone in Russia has abandoned a year ago unfinished. I forked and made some commits to it. I ended up rewriting almost every line and believe I've come up with a usable solution. Here's what's equivalent to the code above in JS-CLOS. The code is written in CoffeeScript.</p>
       <pre><code>
 ## a class representing instruments
 instrument = define_class()
 
 ## flute inherits from instrument
-flute = define_class(instrument)
+flute = define_class [instrument]
 
 ## musicians have a name and an instrument they play
 musician = define_class [], (x) ->

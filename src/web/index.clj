@@ -98,14 +98,14 @@
         {:async      true
          :data-id    "6e9fc0503251013041d412313d06f1ad"
          :data-ratio "1.33333333333333"
-         :src        "//speakerdeck.com/assets/embed.js"}]]]
+         :src        "//speakerdeck.com/assets/embed.js"}]]]]
+    [:div
      [:section.section
       [:h2 "Articles"]
       [:ul
        [:li [:a {:href "https://gist.github.com/ympbyc/5564146"} "Functional JavaScript"]]
        [:li [:a {:href "https://gist.github.com/ympbyc/5459224"} "Getting Close To Metal: The Right Way"] " (incomplete)"]
-       [:li [:a {:href "https://gist.github.com/ympbyc/5278140"} "LLerのための関数指向入門"]]]]]
-    [:div
+       [:li [:a {:href "https://gist.github.com/ympbyc/5278140"} "LLerのための関数指向入門"]]]]
      [:div.section
       [:img {:src "images/favourites.jpg"}]]
      [:section.section

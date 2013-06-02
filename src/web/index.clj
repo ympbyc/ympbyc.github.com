@@ -85,14 +85,14 @@
     [:div
      [:div.section
       [:img {:src "images/vopal.png"}]]
-     [:section.section
-      [:h2 "Talks"]
+     [:div.section
       [:div.slide
        [:script.speakerdeck-embed
         {:async      true
          :data-id    "5094b6c9cac0440002011658"
          :data-ratio "1.33333333333333"
-         :src        "//speakerdeck.com/assets/embed.js"}]]
+         :src        "//speakerdeck.com/assets/embed.js"}]]]
+     [:div.section
       [:div.slide
        [:script.speakerdeck-embed
         {:async      true

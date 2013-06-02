@@ -123,15 +123,20 @@ i {
     padding: 4px;
     overflow: hidden;
     float: left;
-    min-width: 28%;
-    max-width: 29%;
+    min-width: 380px;
+    max-width: 380px;
     background-color: rgba(244,243,248, 0.7);
 }
+
+    div.section {
+        display: block;
+        padding: 0;
+        /*max-width: 250px;*/
+    }
 
     .section img {
         display: block;
         margin: 0 auto;
-        max-width: 250px;
     }
 
 #menu {
@@ -144,7 +149,7 @@ i {
 #content {
     margin: 100px auto;
     padding: 20px 10px 20px;
-    max-width: 1000px;
+    max-width: 1200px;
     font-family: serif;
 }
 

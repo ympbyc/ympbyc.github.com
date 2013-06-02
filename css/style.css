@@ -1,0 +1,161 @@
+body {
+    background-color: #eae9e4;
+    font-size: 16px;
+    color: #262734;
+}
+
+header h1{
+    margin: 2px 2px -6px 18px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 0px;
+    color: #262734;
+    border-bottom: 3px solid #e6c213;
+    font-size: 16px;
+    background-color: rgba(234,233,228, 0.7);
+    z-index: 10;
+}
+
+section {
+    margin: 0.5em;
+    text-align: justify;
+
+   /* text-justify: distribute; */
+}
+
+hr {
+    border: none;
+    background-image: url("../images/hr.svg");
+    width: 540px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#content h1 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+pre {
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+input {
+    margin-bottom: 6px;
+}
+
+i {
+    font-style: italic;
+}
+
+.code {
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    padding: 1px 3px;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.grey {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.important {
+    border-bottom: 2px solid #CC6D0D;
+}
+
+.tough {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.demo {
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+    .demo ul {
+        margin-bottom: 2px;
+    }
+
+.yellow {
+    color: #e6c213;
+}
+
+.orange {
+    color: #CC6D0D;
+}
+
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+#content div {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.section {
+    height: 100%;
+    position: relative;
+    display: block;
+    padding: 4px;
+    overflow: hidden;
+    float: left;
+    min-width: 28%;
+    max-width: 29%;
+    background-color: rgba(244,243,248, 0.7);
+}
+
+    .section img {
+        display: block;
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+#menu {
+    position:absolute;
+    right: 30px;
+    top: 48px;
+    margin-top: -1em;
+}
+
+#content {
+    margin: 100px auto;
+    padding: 20px 10px 20px;
+    max-width: 1000px;
+    font-family: serif;
+}
+
+
+/* Google code prettifier */
+
+.prettyprint .com {
+    color: #a3a3a3;
+}
+
+.prettyprint .atv,
+.prettyprint .str {
+    color:  #e6c213;
+}

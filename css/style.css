@@ -119,6 +119,7 @@ i {
 .section {
     height: 100%;
     position: relative;
+    margin: 3px;
     display: block;
     padding: 4px;
     overflow: hidden;

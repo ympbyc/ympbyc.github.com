@@ -118,6 +118,7 @@ i {
 
 .section {
     height: 100%;
+    margin: 3px;
     position: relative;
     margin: 3px;
     display: block;

@@ -54,7 +54,8 @@
        [:li "Scheme"]
        [:li "JavaScript"]
        [:li "SML"]
-       [:li "Smalltalk"]]]
+       [:li "Smalltalk"]
+       [:li "... and most of mainstream LLs"]]]
      [:div.section
       [:img {:src "images/smalltalk.jpg"}]]]
     [:div
@@ -81,7 +82,7 @@
         [:td "Purely Functional Poc Lisp (incomplete)"]]
        [:tr
         [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
-        [:td "Write JavaScript in Smalltalk syntax"]]
+        [:td "Write JavaScript in Smalltalk's Syntax"]]
        [:tr
         [:td [:a {:href "http://ympbyc.github.io/Pasta/web"} "Pasta"]]
         [:td "Client side functional GUI programming"]]
@@ -95,11 +96,12 @@
         [:td [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"]]
         [:td "Roguelike written in Biwascheme (incomplete)"]]
        [:tr
-        [:td [:a {:href "https://github.com/ympbyc/coffeehack"} "coffeehack"]]
+        [:td [:a {:href "https://ympbyc.github.io/coffeehack"} "coffeehack"]]
         [:td "Roguelike written in Coffeescript (abandoned)"]]]]]
     [:div
      [:div.section
-      [:a {:href "http://ympbyc.github.io/vorpalblade/"} [:img {:src "images/vopal.png"}]]]
+      [:img {:src "images/vopal.png"}]
+      [:a {:href "http://ympbyc.github.io/vorpalblade/"} "VorpalBlade"]]
      [:div.section
       [:div.slide
        [:script.speakerdeck-embed
@@ -113,14 +115,14 @@
         {:async      true
          :data-id    "6e9fc0503251013041d412313d06f1ad"
          :data-ratio "1.33333333333333"
-         :src        "//speakerdeck.com/assets/embed.js"}]]]
+         :src        "//speakerdeck.com/assets/embed.js"}]]]]
+    [:div
      [:section.section
       [:h2 "Articles"]
       [:ul
        [:li [:a {:href "https://gist.github.com/ympbyc/5564146"} "Functional JavaScript"]]
        [:li [:a {:href "https://gist.github.com/ympbyc/5459224"} "Getting Close To Metal: The Right Way"] " (incomplete)"]
-       [:li [:a {:href "https://gist.github.com/ympbyc/5278140"} "LLerのための関数指向入門"]]]]]
-    [:div
+       [:li [:a {:href "https://gist.github.com/ympbyc/5278140"} "LLerのための関数指向入門"]]]]
      [:div.section
       [:img {:src "images/favourites.jpg"}]]
      [:section.section
@@ -129,9 +131,10 @@
        [:li [:a {:href "https://github.com/ympbyc"} "ympbyc on github"]]
        [:li [:a {:href "http://d.hatena.ne.jp/ympbyc"} "標高+1m (blog)"]]
        [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]]
-
     [:div
-     [:img {:src "images/lisplogo_warning2.png"}]]]])
+     [:div.section
+      [:a {:href "view-source:"}
+       [:img {:src "images/lisplogo_warning2.png"}]]]]]])
 
 
 (defn main-html []

@@ -61,6 +61,7 @@
      [:section.section
       [:h2 "Interested in"]
       [:ul
+       [:li "Painting"]
        [:li "Concatenative Languages"]
        [:li "Graphical Languages"]
        [:li "Functional GUI Programming"]
@@ -74,17 +75,31 @@
       [:img {:src "images/ring.jpg"}]]
      [:section.section
       [:h2 "Pet Projects"]
-      [:ul
-       [:li [:a {:href "http://ympbyc.github.io/Pasta/web"} "Pasta"] " -- Client side functional GUI programming"]
-       [:li [:a {:href "https://github.com/ympbyc/underscore-fix"} "Underscore-fix"] " -- Underscore.js extensions for serious functional programming"]
-       [:li [:a {:href "https://github.com/ympbyc/Nadeko"} "Nadeko"] " -- Purely Functional Poc Lisp (incomplete)"]
-       [:li [:a {:href "https://github.com/ympbyc/js-clos"} " -- Multimethod in JavaScript"]]
-       [:li [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"] " -- Write JavaScript in Smalltalk syntax"]
-       [:li [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"] " -- Roguelike written in Biwascheme (incomplete)"]
-       [:li [:a {:href "https://github.com/ympbyc/coffeehack"} "coffeehack"] " -- Roguelike written in Coffeescript"]]]]
+      [:table
+       [:tr
+        [:td [:a {:href "https://github.com/ympbyc/Nadeko"} "Nadeko"]]
+        [:td "Purely Functional Poc Lisp (incomplete)"]]
+       [:tr
+        [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
+        [:td "Write JavaScript in Smalltalk syntax"]]
+       [:tr
+        [:td [:a {:href "http://ympbyc.github.io/Pasta/web"} "Pasta"]]
+        [:td "Client side functional GUI programming"]]
+       [:tr
+        [:td [:a {:href "https://github.com/ympbyc/underscore-fix"} "Underscore-fix"]]
+        [:td "Underscore.js extensions for serious functional programming"]]
+       [:tr
+        [:td [:a {:href "https://github.com/ympbyc/js-clos"} "JS-CLOS"]]
+        [:td "Multimethod in JavaScript"]]
+       [:tr
+        [:td [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"]]
+        [:td "Roguelike written in Biwascheme (incomplete)"]]
+       [:tr
+        [:td [:a {:href "https://github.com/ympbyc/coffeehack"} "coffeehack"]]
+        [:td "Roguelike written in Coffeescript (abandoned)"]]]]]
     [:div
      [:div.section
-      [:img {:src "images/vopal.png"}]]
+      [:a {:href "http://ympbyc.github.io/vorpalblade/"} [:img {:src "images/vopal.png"}]]]
      [:div.section
       [:div.slide
        [:script.speakerdeck-embed
@@ -111,9 +126,12 @@
      [:section.section
       [:h2 "See Also"]
       [:ul
-       [:li [:a {:href "https://github.com/ympbyc"} "github"]]
-       [:li [:a {:href "http://d.hatena.ne.jp/ympbyc"} "blog"]]
-       [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "facebook"]]]]]]])
+       [:li [:a {:href "https://github.com/ympbyc"} "ympbyc on github"]]
+       [:li [:a {:href "http://d.hatena.ne.jp/ympbyc"} "標高+1m (blog)"]]
+       [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]]
+
+    [:div
+     [:img {:src "images/lisplogo_warning2.png"}]]]])
 
 
 (defn main-html []

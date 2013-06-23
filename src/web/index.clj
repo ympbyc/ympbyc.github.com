@@ -96,7 +96,7 @@
         [:td [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"]]
         [:td "Roguelike written in Biwascheme (incomplete)"]]
        [:tr
-        [:td [:a {:href "https://ympbyc.github.io/coffeehack"} "coffeehack"]]
+        [:td [:a {:href "http://ympbyc.github.io/coffeehack/build"} "coffeehack"]]
         [:td "Roguelike written in Coffeescript (abandoned)"]]]]]
     [:div
      [:div.section

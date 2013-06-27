@@ -133,6 +133,13 @@
        [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]]
     [:div
      [:div.section
+      [:img {:src "images/painting/tajimahikawa.png"}]]
+     [:div.section
+      [:img {:src "images/painting/kounumakawa.png"}]]
+     [:div.section
+      [:img {:src "images/painting/nakaurawa.png"}]]]
+    [:div
+     [:div.section
       [:a {:href "view-source:"}
        [:img {:src "images/lisplogo_warning2.png"}]]]]]])
 

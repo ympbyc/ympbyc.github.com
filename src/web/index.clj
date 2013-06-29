@@ -84,6 +84,9 @@
         [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
         [:td "Write JavaScript in Smalltalk's Syntax"]]
        [:tr
+        [:td [:a {:href "http://ympbyc.github.io/s-exploration"} "S-exploration"]]
+        [:td "Graphical S-expression Editor"]]
+       [:tr
         [:td [:a {:href "http://ympbyc.github.io/Pasta/web"} "Pasta"]]
         [:td "Client side functional GUI programming"]]
        [:tr
@@ -141,7 +144,10 @@
     [:div
      [:div.section
       [:a {:href "view-source:"}
-       [:img {:src "images/lisplogo_warning2.png"}]]]]]])
+       [:img {:src "images/lisplogo_warning2.png"}]]]
+     [:div.section
+      [:a {:href "http://ympbyc.github.io/s-exploration"}
+       [:img {:src "images/s-exploration.png"}]]]]]])
 
 
 (defn main-html []

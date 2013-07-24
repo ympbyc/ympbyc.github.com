@@ -5,7 +5,9 @@
   (:gen-class))
 
 (def menu
-  [:div#menu])
+  [:div#menu
+   [:a.btn.btn-blue.page {:href "#"} "Top"]
+   [:a.btn.btn-blue.page {:href "contents.html"} "Blog"]])
 
 (defn html-head []
   [:head

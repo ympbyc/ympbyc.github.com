@@ -1,6 +1,7 @@
 (ns web.index
   (require [hiccup.core :as h]
-           [hiccup.util :as hu])
+           [hiccup.util :as hu]
+           [hiccup.page :as hp])
   (:gen-class))
 
 (def menu
@@ -10,24 +11,25 @@
   [:head
    [:meta {:charset "utf-8"}]
    [:title "ympbyc"]
-   [:link {:rel  "stylesheet"
-           :href "components/kraken/kraken.css"}]
-   [:link {:rel "stylesheet"
-           :href "components/google-code-prettify/prettify.css"}]
-   [:link {:rel  "stylesheet"
-           :href "css/style.css"}]
-   [:script {:src "components/jquery/jquery.min.js"}]
-   [:script {:src "components/google-code-prettify/prettify.js"}]
-   [:script {:src "components/underscore/underscore-min.js"}]
-   [:script {:src "components/underscore-fix/underscore-fix.js"}]])
+   (hp/include-css "components/kraken/kraken.css")
+   (hp/include-css "components/google-code-prettify/prettify.css")
+   (hp/include-css "css/style.css")
+   (hp/include-js  "components/jquery/jquery.min.js")
+   (hp/include-js  "components/google-code-prettify/prettify")
+   (hp/include-js  "components/underscore/underscore-min.js")
+   (hp/include-js  "components/underscore-fix/underscore-fix.js")])
+
+(defn header [img title subtitle]
+  [:header
+   [:img {:src img :style "float: left; margin-right: 20px; width: 109px; height: 109px;"}]
+   [:h1 title]
+   [:i subtitle]
+   menu])
+
 
 (defn html-body []
   [:body {:onload "prettyPrint()"}
-   [:header
-    [:img {:src "images/face.jpg" :style "float: left; margin-right: 20px"}]
-    [:h1 "ympbyc"]
-    [:i "Minori Yamashita 1993"]
-    menu]
+   (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993")
    [:div#content
     [:div
      [:section.section
@@ -152,6 +154,6 @@
 
 (defn main-html []
   (h/html
-   [:html
+   (hp/html5
     (html-head)
-    (html-body)]))
+    (html-body))))

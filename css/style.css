@@ -1,11 +1,24 @@
-body {
+@font-face {
+    font-family: 'HelveticaNeue-Condensed';
+    src: url('../fonts/HelveticaNeue-Condensed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'baramond';
+    src: url('../fonts/Baramond.ttf') format('truetype');
+}
+
+
+
+html,body {
     background-color: #eae9e4;
     font-size: 16px;
+    font-family: serif;
     color: #262734;
 }
 
 header h1{
-    margin: 2px 2px -6px 18px;
+    margin: 8px 2px -6px 18px;
     font-weight: bold;
     font-size: 2em;
 }
@@ -21,6 +34,7 @@ header {
     font-size: 16px;
     background-color: rgba(234,233,228, 0.7);
     z-index: 10;
+    font-family: "Helvetica Neue",Arial,sans-serif
 }
 
 section {
@@ -59,6 +73,23 @@ input {
 
 i {
     font-style: italic;
+}
+
+blockquote {
+    background: #fff;
+    border-left: 4px solid #9DD059;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    padding: 2px 20px;
+}
+
+small {
+    font-size: 0.7em;
 }
 
 .code {
@@ -110,7 +141,7 @@ i {
     margin: 0 auto;
 }
 
-#content div {
+#content>div {
     overflow: hidden;
     position: relative;
     margin-bottom: 4px;
@@ -165,4 +196,118 @@ i {
 .prettyprint .atv,
 .prettyprint .str {
     color:  #e6c213;
+}
+
+
+
+/* Blog */
+
+body.blog,#content.blog {
+    font-family: baramond, monospace, serif;
+}
+
+#content.blog {
+    max-width: 1000px;
+}
+
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4 {
+    font-family: "HelveticaNeue-Condensed", Arial, sans-serif;
+}
+
+
+.blog #content .bracket {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-height: 88px;
+}
+
+.bracket>* {
+    float: left;
+}
+
+.bracket-c {
+    width: 90%;
+    padding: 20px 50px 5px 50px;
+}
+
+.bracket-l {
+    position: absolute;
+    bottom: 0px;
+    top:0px;
+    left: 10px;
+    width: 20px;
+    border: 2px solid #000;
+    border-right: none;
+}
+
+
+.bracket-r {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 10px;
+    width: 20px;
+    border: 2px solid #000;
+    border-left: none;
+}
+
+
+.brace-tip {
+    position: absolute;
+    bottom: 50%;
+    width: 10px;
+    height: 6px;
+    background-color: #000;
+}
+
+.brace-tip.l {
+    left: 0;
+}
+
+.brace-tip.r {
+    right: 0;
+}
+
+
+
+.clj:before {
+    color: #a3a3a3;
+    font-family: 'HelveticaNeue-Condensed', sans-serif;
+}
+
+.clj-title:before {
+    content: ":title 　"
+}
+
+.clj-date:before {
+    content: ":date 　 　"
+}
+
+.clj-author:before {
+    content: ":author 　 "
+}
+
+.clj-content:before {
+    content: ":content　"
+}
+
+.clj-ympbyc:before {
+    content: ":ympbyc　"
+}
+
+.clj-blog:before {
+    content: ":blog　 　"
+}
+
+.clj-meta:before {
+    content: ":meta  "
+}
+
+
+ul.no {
+    list-style-type: none;
 }

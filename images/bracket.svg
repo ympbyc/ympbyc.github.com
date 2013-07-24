@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="40">
+    <desc iVinci="yes" version="2.9" gridStep="20" showGrid="no" snapToGrid="no" codePlatform="0"/>
+    <g id="Layer0">
+        <g id="Shape1">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(1,0,0,1,12.4724,20.1458)" locked="0" mesh="" flag=""/>
+            <path id="shapePath1" d="M22.0029,2.39929 C22.0029,2.39929 2.94186,2.39929 2.94186,2.39929 C2.94186,2.39929 2.94186,38.5496 2.94186,38.5496 C2.94186,38.5496 22.6602,38.5496 22.6602,38.5496 C22.6602,38.5496 2.28458,39.2069 2.28458,39.2069 C2.28458,39.2069 2.94186,1.08474 2.94186,1.08474 C2.94186,1.08474 22.0029,2.39929 22.0029,2.39929 Z" style="stroke:#323232;stroke-opacity:1;stroke-width:2;stroke-linejoin:miter;stroke-miterlimit:2;stroke-linecap:round;fill-rule:evenodd;fill:#000000;fill-opacity:1;"/>
+        </g>
+        <g id="Shape2">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(-0.999826,-0.0186669,0.0186669,-0.999826,229.458,20.7643)" locked="0" mesh="" flag=""/>
+            <path id="shapePath2" d="M219.598,38.3299 C219.598,38.3299 238.656,38.6857 238.656,38.6857 C238.656,38.6857 239.331,2.54163 239.331,2.54163 C239.331,2.54163 219.616,2.17355 219.616,2.17355 C219.616,2.17355 240,1.89673 240,1.89673 C240,1.89673 238.631,40 238.631,40 C238.631,40 219.598,38.3299 219.598,38.3299 Z" style="stroke:#323232;stroke-opacity:1;stroke-width:2;stroke-linejoin:miter;stroke-miterlimit:2;stroke-linecap:round;fill-rule:evenodd;fill:#000000;fill-opacity:1;"/>
+        </g>
+    </g>
+</svg>

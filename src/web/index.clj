@@ -43,9 +43,11 @@
       [:img {:src "images/bike.jpg"}]]
      [:section.section
       [:h2 "Currently"]
-      [:ul [:li [:a {:href "http://pilotz.jp/"} "PILOT"]]]
+      [:ul [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College"]]]
       [:h2 "Formerly"]
-      [:ul [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College"]]]]]
+      [:ul
+       [:li [:a {:href "http://pilotz.jp/"} "PILOT"]]
+       [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College"]]]]]
     [:div
      [:div.section
       [:img {:src "images/nakaurawa.jpg"}]]
@@ -59,23 +61,22 @@
        [:li "JavaScript"]
        [:li "SML"]
        [:li "Smalltalk"]
-       [:li "... and most of mainstream LLs"]]]
+       [:li "... and most other mainstream LLs"]]]
      [:div.section
       [:img {:src "images/smalltalk.jpg"}]]]
     [:div
      [:section.section
       [:h2 "Interested in"]
       [:ul
-       [:li "Painting"]
        [:li "Concatenative Languages"]
        [:li "Graphical Languages"]
        [:li "Functional GUI Programming"]
-       [:li "Toy Camera"]
+       [:li "Painting"]
        [:li "Radio"]
-       [:li "Time"]
        [:li "Human Powered Flying Vehicle"]
-       [:li "Philosophy"]
-       [:li "SF"]]]
+       [:li "Theoretical Physics"]
+       [:li "Roguelike Games"]
+       [:li "SyFy"]]]
      [:div.section
       [:img {:src "images/ring.jpg"}]]
      [:section.section

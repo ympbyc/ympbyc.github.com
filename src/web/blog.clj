@@ -37,7 +37,7 @@
   (h/html
    (hp/html5
     (html-head)
-    [:body.blog
+    [:body.blog {:onload "prettyPrint()"}
      (index/header "../images/geta.png" "(inc altitude)" "")
      [:div#content.blog
       (brace

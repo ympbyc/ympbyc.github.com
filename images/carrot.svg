@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="480">
+    <desc iVinci="yes" version="2.9" gridStep="20" showGrid="no" snapToGrid="no" codePlatform="0"/>
+    <g id="Layer0">
+        <g id="Shape1">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.671923,-0.0763585,0.0885679,0.522377,274.018,308.364)" locked="0" mesh="" flag=""/>
+            <path id="shapePath1" d="M266.56,374.811 C266.56,374.811 278.906,337.364 254.665,304.656 C230.425,271.948 259.805,251.169 259.805,251.169 C259.805,251.169 273.761,240.862 285.886,241.81 C298.011,242.757 225.806,254.262 260.438,303.419 C291.35,347.297 266.56,374.811 266.56,374.811 Z" style="stroke:#519b4f;stroke-opacity:1;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:2;stroke-linecap:round;fill-rule:evenodd;fill:#699648;fill-opacity:1;"/>
+        </g>
+        <g id="Shape2">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.671923,-0.0763585,0.0885679,0.522377,277.99,247.706)" locked="0" mesh="" flag=""/>
+            <path id="shapePath2" d="M280.22,247.453 C280.372,248.351 279.497,249.192 278.265,249.331 C277.034,249.471 275.912,248.857 275.76,247.96 C275.608,247.062 276.483,246.221 277.714,246.081 C278.946,245.941 280.067,246.555 280.22,247.453 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape3">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.651143,-0.073997,0.101188,0.59681,253.351,269.515)" locked="0" mesh="" flag=""/>
+            <path id="shapePath3" d="M255.512,269.269 C255.686,270.295 254.859,271.236 253.666,271.372 C252.473,271.507 251.364,270.786 251.19,269.76 C251.016,268.735 251.843,267.794 253.036,267.658 C254.23,267.523 255.338,268.244 255.512,269.269 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape4">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.651143,-0.073997,0.101188,0.59681,255.638,264.16)" locked="0" mesh="" flag=""/>
+            <path id="shapePath4" d="M257.799,263.915 C257.973,264.94 257.147,265.881 255.953,266.017 C254.76,266.153 253.652,265.431 253.478,264.406 C253.304,263.38 254.13,262.439 255.324,262.304 C256.517,262.168 257.625,262.889 257.799,263.915 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape5">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.651143,-0.073997,0.101188,0.59681,259.158,259.785)" locked="0" mesh="" flag=""/>
+            <path id="shapePath5" d="M261.319,259.539 C261.492,260.565 260.666,261.506 259.473,261.642 C258.279,261.777 257.171,261.056 256.997,260.03 C256.823,259.005 257.65,258.064 258.843,257.928 C260.036,257.793 261.145,258.514 261.319,259.539 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape6">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.651143,-0.073997,0.101188,0.59681,262.509,256.091)" locked="0" mesh="" flag=""/>
+            <path id="shapePath6" d="M264.669,255.846 C264.843,256.871 264.017,257.812 262.823,257.948 C261.63,258.084 260.522,257.362 260.348,256.337 C260.174,255.312 261.001,254.37 262.194,254.235 C263.387,254.099 264.496,254.82 264.669,255.846 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape7">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.651143,-0.073997,0.101188,0.59681,266.527,252.984)" locked="0" mesh="" flag=""/>
+            <path id="shapePath7" d="M268.688,252.739 C268.862,253.764 268.035,254.705 266.842,254.841 C265.649,254.977 264.54,254.255 264.366,253.23 C264.193,252.205 265.019,251.263 266.212,251.128 C267.406,250.992 268.514,251.713 268.688,252.739 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape8">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(1,0,0,1,275.553,408.455)" locked="0" mesh="" flag=""/>
+            <path id="shapePath8" d="M250.745,453.806 C250.745,453.806 237.957,381.341 246.482,371.598 C255.008,361.854 292.154,360.028 303.115,368.553 C314.076,377.078 301.288,453.197 301.288,453.197 C301.288,453.197 250.745,453.806 250.745,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f49136;fill-opacity:1;"/>
+        </g>
+        <g id="Shape9">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.651143,-0.073997,0.101188,0.59681,272.625,249.843)" locked="0" mesh="" flag=""/>
+            <path id="shapePath9" d="M274.786,249.598 C274.96,250.623 274.133,251.564 272.94,251.7 C271.746,251.836 270.638,251.114 270.464,250.089 C270.29,249.064 271.117,248.122 272.31,247.987 C273.504,247.851 274.612,248.572 274.786,249.598 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape10">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.774591,0,0,0.870922,275.553,414.308)" locked="0" mesh="" flag=""/>
+            <path id="shapePath10" d="M256.337,453.806 C256.337,453.806 246.432,390.694 253.035,382.209 C259.639,373.723 288.412,372.132 296.902,379.557 C305.393,386.982 295.487,453.275 295.487,453.275 C295.487,453.275 256.337,453.806 256.337,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#fefdff;fill-opacity:1;"/>
+        </g>
+        <g id="Shape11">
+            <desc type="2" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="^" font-familyName="Arial" font-pointSize="31" font-weight="50" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(1.8012,0,0,1.5637,275.457,443.555)" locked="0" mesh="" flag=""/>
+            <path id="shapePath11" d="M269.365,453.806 L264.321,453.806 L273.945,434.847 L277.898,434.847 L287.577,453.806 L282.642,453.806 L275.908,439.675 L269.365,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f39136;fill-opacity:1;"/>
+        </g>
+        <g id="Shape12">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.678244,0.0105157,-0.012197,0.527291,290.501,306.694)" locked="0" mesh="" flag=""/>
+            <path id="shapePath12" d="M270.456,371.371 C270.456,371.371 289.795,335.963 272.094,300.556 C254.393,265.149 287.376,248.383 287.376,248.383 C287.376,248.383 303.128,239.988 314.923,242.474 C326.719,244.961 253.206,247.089 278.032,300.072 C300.192,347.366 270.456,371.371 270.456,371.371 Z" style="stroke:#519b4f;stroke-opacity:1;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:2;stroke-linecap:round;fill-rule:evenodd;fill:#699648;fill-opacity:1;"/>
+        </g>
+        <g id="Shape13">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.678244,0.0105157,-0.012197,0.527291,305.999,247.289)" locked="0" mesh="" flag=""/>
+            <path id="shapePath13" d="M308.25,247.324 C308.229,248.23 307.204,248.949 305.961,248.929 C304.718,248.91 303.727,248.16 303.748,247.254 C303.769,246.348 304.794,245.629 306.037,245.649 C307.28,245.668 308.271,246.418 308.25,247.324 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape14">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.657269,0.0101904,-0.013935,0.602424,277.501,265.678)" locked="0" mesh="" flag=""/>
+            <path id="shapePath14" d="M279.682,265.712 C279.658,266.747 278.663,267.571 277.458,267.553 C276.253,267.534 275.296,266.68 275.32,265.645 C275.344,264.61 276.34,263.786 277.545,263.804 C278.749,263.823 279.706,264.677 279.682,265.712 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape15">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.657269,0.0101904,-0.013935,0.602424,280.782,260.682)" locked="0" mesh="" flag=""/>
+            <path id="shapePath15" d="M282.964,260.716 C282.94,261.751 281.944,262.575 280.739,262.556 C279.535,262.537 278.577,261.683 278.601,260.648 C278.625,259.613 279.621,258.789 280.826,258.808 C282.03,258.827 282.987,259.681 282.964,260.716 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape16">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.657269,0.0101904,-0.013935,0.602424,285.093,256.81)" locked="0" mesh="" flag=""/>
+            <path id="shapePath16" d="M287.275,256.844 C287.251,257.879 286.255,258.703 285.05,258.685 C283.846,258.666 282.888,257.812 282.912,256.777 C282.936,255.742 283.932,254.918 285.137,254.936 C286.341,254.955 287.298,255.809 287.275,256.844 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape17">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.657269,0.0101904,-0.013935,0.602424,289.108,253.591)" locked="0" mesh="" flag=""/>
+            <path id="shapePath17" d="M291.289,253.625 C291.265,254.66 290.269,255.484 289.065,255.465 C287.86,255.446 286.903,254.592 286.927,253.557 C286.951,252.522 287.947,251.698 289.151,251.717 C290.356,251.735 291.313,252.59 291.289,253.625 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape18">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.657269,0.0101904,-0.013935,0.602424,293.67,251.036)" locked="0" mesh="" flag=""/>
+            <path id="shapePath18" d="M295.851,251.07 C295.827,252.105 294.831,252.929 293.627,252.91 C292.422,252.891 291.465,252.037 291.489,251.002 C291.513,249.967 292.509,249.143 293.713,249.162 C294.918,249.181 295.875,250.035 295.851,251.07 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape19">
+            <desc type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.657269,0.0101904,-0.013935,0.602424,300.292,248.713)" locked="0" mesh="" flag=""/>
+            <path id="shapePath19" d="M302.473,248.747 C302.449,249.782 301.454,250.606 300.249,250.588 C299.044,250.569 298.087,249.715 298.111,248.68 C298.135,247.645 299.131,246.821 300.336,246.839 C301.54,246.858 302.497,247.712 302.473,248.747 Z" style="stroke:none;fill-rule:evenodd;fill:#3e673a;fill-opacity:1;"/>
+        </g>
+        <g id="Shape20">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(1,0,0,1,275.553,408.455)" locked="0" mesh="" flag=""/>
+            <path id="shapePath20" d="M250.745,453.806 C250.745,453.806 237.957,381.341 246.483,371.598 C255.008,361.854 292.154,360.028 303.115,368.553 C314.076,377.078 301.288,453.197 301.288,453.197 C301.288,453.197 250.745,453.806 250.745,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f49136;fill-opacity:1;"/>
+        </g>
+        <g id="Shape21">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.774591,0,0,0.870922,275.553,414.308)" locked="0" mesh="" flag=""/>
+            <path id="shapePath21" d="M256.337,453.806 C256.337,453.806 246.432,390.694 253.035,382.209 C259.639,373.723 288.412,372.132 296.902,379.557 C305.393,386.982 295.487,453.275 295.487,453.275 C295.487,453.275 256.337,453.806 256.337,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#fefdff;fill-opacity:1;"/>
+        </g>
+        <g id="Shape22">
+            <desc type="2" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="^" font-familyName="Arial" font-pointSize="31" font-weight="50" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(1.8012,0,0,1.5637,275.457,443.555)" locked="0" mesh="" flag=""/>
+            <path id="shapePath22" d="M269.365,453.806 L264.321,453.806 L273.945,434.847 L277.898,434.847 L287.577,453.806 L282.642,453.806 L275.908,439.675 L269.365,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f39136;fill-opacity:1;"/>
+        </g>
+        <g id="Shape23">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.587096,0,0,0.760157,275.306,419.332)" locked="0" mesh="" flag=""/>
+            <path id="shapePath23" d="M260.741,453.806 C260.741,453.806 253.233,398.721 258.238,391.315 C263.243,383.908 285.052,382.52 291.487,389 C297.922,395.481 290.414,453.343 290.414,453.343 C290.414,453.343 260.741,453.806 260.741,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f49136;fill-opacity:1;"/>
+        </g>
+        <g id="Shape24">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.454759,0,0,0.662038,275.306,423.782)" locked="0" mesh="" flag=""/>
+            <path id="shapePath24" d="M264.024,453.806 C264.024,453.806 258.208,405.831 262.085,399.381 C265.962,392.93 282.855,391.721 287.84,397.365 C292.824,403.009 287.009,453.403 287.009,453.403 C287.009,453.403 264.024,453.806 264.024,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#fefdff;fill-opacity:1;"/>
+        </g>
+        <g id="Shape25">
+            <desc type="2" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="^" font-familyName="Arial" font-pointSize="31" font-weight="50" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(1.05748,0,0,1.18866,275.249,446.013)" locked="0" mesh="" flag=""/>
+            <path id="shapePath25" d="M271.672,453.806 L268.711,453.806 L274.361,439.394 L276.682,439.394 L282.365,453.806 L279.468,453.806 L275.514,443.064 L271.672,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f39136;fill-opacity:1;"/>
+        </g>
+        <g id="Shape26">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.587096,0,0,0.760157,275.306,419.332)" locked="0" mesh="" flag=""/>
+            <path id="shapePath26" d="M260.741,453.806 C260.741,453.806 253.233,398.721 258.238,391.315 C263.243,383.908 285.052,382.52 291.487,389 C297.922,395.481 290.414,453.343 290.414,453.343 C290.414,453.343 260.741,453.806 260.741,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f49136;fill-opacity:1;"/>
+        </g>
+        <g id="Shape27">
+            <desc type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="" font-familyName="" font-pointSize="20" font-weight="-1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(0.454759,0,0,0.662038,275.306,423.782)" locked="0" mesh="" flag=""/>
+            <path id="shapePath27" d="M264.024,453.806 C264.024,453.806 258.209,405.831 262.085,399.381 C265.962,392.93 282.855,391.721 287.84,397.365 C292.824,403.009 287.009,453.403 287.009,453.403 C287.009,453.403 264.024,453.806 264.024,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#fefdff;fill-opacity:1;"/>
+        </g>
+        <g id="Shape28">
+            <desc type="2" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" text="^" font-familyName="Arial" font-pointSize="31" font-weight="50" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" transform="matrix(1.15173,0,0,1.18866,274.991,446.013)" locked="0" mesh="" flag=""/>
+            <path id="shapePath28" d="M271.095,453.806 L267.87,453.806 L274.024,439.394 L276.552,439.394 L282.741,453.806 L279.585,453.806 L275.279,443.064 L271.095,453.806 Z" style="stroke:none;fill-rule:evenodd;fill:#f39136;fill-opacity:1;"/>
+        </g>
+    </g>
+</svg>

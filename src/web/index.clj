@@ -1,8 +1,7 @@
 (ns web.index
   (require [hiccup.core :as h]
            [hiccup.util :as hu]
-           [hiccup.page :as hp])
-  (:gen-class))
+           [hiccup.page :as hp]))
 
 (def menu
   [:div#menu
@@ -43,11 +42,11 @@
       [:img {:src "images/bike.jpg"}]]
      [:section.section
       [:h2 "Currently"]
-      [:ul [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College"]]]
+      [:ul [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College (Student)"]]]
       [:h2 "Formerly"]
       [:ul
        [:li [:a {:href "http://pilotz.jp/"} "PILOT"]]
-       [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College"]]]]]
+       [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College (Student)"]]]]]
     [:div
      [:div.section
       [:img {:src "images/nakaurawa.jpg"}]]
@@ -83,7 +82,7 @@
       [:h2 "Pet Projects"]
       [:table
        [:tr
-        [:td [:a {:href "https://github.com/ympbyc/Nadeko"} "Nadeko"]]
+        [:td [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot"]]
         [:td "Purely Functional Poc Lisp (incomplete)"]]
        [:tr
         [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
@@ -108,8 +107,12 @@
         [:td "Roguelike written in Coffeescript (abandoned)"]]]]]
     [:div
      [:div.section
-      [:img {:src "images/vopal.png"}]
-      [:a {:href "http://ympbyc.github.io/vorpalblade/"} "VorpalBlade"]]
+      [:div.slide
+       [:script.speakerdeck-embed
+        {:async      true
+         :data-id    "8102cd705054013132c906f96a5ccdc2"
+         :data-ratio "1.33333333333333"
+         :src        "//speakerdeck.com/assets/embed.js"}]]]
      [:div.section
       [:div.slide
        [:script.speakerdeck-embed
@@ -152,7 +155,10 @@
        [:img {:src "images/lisplogo_warning2.png"}]]]
      [:div.section
       [:a {:href "http://ympbyc.github.io/s-exploration"}
-       [:img {:src "images/s-exploration.png"}]]]]]])
+       [:img {:src "images/s-exploration.png"}]]]
+     [:div.section
+      [:img {:src "images/vopal.png"}]
+      [:a {:href "http://ympbyc.github.io/vorpalblade/"} "VorpalBlade"]]]]])
 
 
 (defn main-html []

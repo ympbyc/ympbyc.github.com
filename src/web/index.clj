@@ -92,7 +92,7 @@
         [:td [:a {:href "http://ympbyc.github.io/s-exploration"} "S-exploration"]]
         [:td "Graphical S-expression Editor"]]
        [:tr
-        [:td [:a {:href "http://ympbyc.github.io/Pasta/web"} "Pasta"]]
+        [:td [:a {:href "http://ympbyc.github.io/Pasta/web/"} "Pasta"]]
         [:td "Client side functional GUI programming"]]
        [:tr
         [:td [:a {:href "https://github.com/ympbyc/underscore-fix"} "Underscore-fix"]]

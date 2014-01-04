@@ -6,6 +6,7 @@
 (def menu
   [:div#menu
    [:a.btn.btn-blue.page {:href "/"} "Top"]
+   [:a.btn.btn-blue.page {:href "#links"} "Links"]
    [:a.btn.btn-blue.page {:href "/contents.html"} "Blog"]])
 
 (defn html-head []
@@ -111,7 +112,7 @@
        [:script.speakerdeck-embed
         {:async      true
          :data-id    "8102cd705054013132c906f96a5ccdc2"
-         :data-ratio "1.33333333333333"
+         :data-ratio "1.77777777777778"
          :src        "//speakerdeck.com/assets/embed.js"}]]]
      [:div.section
       [:div.slide
@@ -136,7 +137,7 @@
        [:li [:a {:href "https://gist.github.com/ympbyc/5278140"} "LLerのための関数指向入門"]]]]
      [:div.section
       [:img {:src "images/favourites.jpg"}]]
-     [:section.section
+     [:section#links.section
       [:h2 "See Also"]
       [:ul
        [:li [:a {:href "https://github.com/ympbyc"} "ympbyc on github"]]

@@ -16,7 +16,7 @@
    [:div
     [:h3 "Spec"]
     [:p "Sweet.js provides some ways to define postfix macros.  However, It is impossible to capture continuations of expressions such as " [:span.code "reset(f(g(shift(k=>...))))"] " with a postfix macro.  Due to this restriction, " [:span.code "shift"] " shall be implemented as a statement construct.  This way, the macro only has to look at the statements that follow the "    [:span.code "shift"] " statement."]
-    [:pre
+    [:pre.prettyprint
      [:code
 "reset {
   ...
@@ -26,7 +26,7 @@
     [:p [:span.code "shift_let"] " takes <function> and give it the continuation. When the continuation gets invoked with a value, the value gets bound to <var>."]]
    [:div
     [:h3 "Implementation"]
-    [:pre
+    [:pre.prettyprint
      [:code
 "macro reset {
   rule { {$exprs...} } => {
@@ -41,7 +41,7 @@ macro shift_let {
 }"]]]
    [:div
     [:h3 "Usage"]
-    [:pre
+    [:pre.prettyprint
      [:code
 "reset {
   shift_let name = getName

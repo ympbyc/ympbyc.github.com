@@ -5,10 +5,10 @@
   (:use [hiccup.page :only [include-css include-js]]))
 
 
-(defn html-head []
+(defn html-head [title]
   [:head
    [:meta {:charset "utf-8"}]
-   [:title "ympbyc"]
+   [:title (str title " -- (inc altitude)")]
    (include-css "../components/kraken/kraken.css")
    (include-css "../components/google-code-prettify/prettify.css")
    (include-css "../css/style.css")
@@ -36,7 +36,7 @@
   [{:keys [title date author content]}]
   (h/html
    (hp/html5
-    (html-head)
+    (html-head title)
     [:body.blog {:onload "prettyPrint()"}
      (index/header "../images/geta.png" "(inc altitude)" "")
      [:div#content.blog

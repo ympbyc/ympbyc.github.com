@@ -23,7 +23,7 @@
   shift_let &lt;var&gt; = &lt;function&gt;
   &lt;continuation&gt;...
 }"]]
-    [:p [:span.code "shift_let"] " takes <function> and give it the continuation. When the continuation gets invoked with a value, the value gets bound to <var>."]]
+    [:p [:span.code "shift_let"] " takes &lt;function&gt; and give it the continuation. When the continuation gets invoked with a value, the value gets bound to &lt;var&gt;."]]
    [:div
     [:h3 "Implementation"]
     [:pre.prettyprint

@@ -203,6 +203,7 @@ small {
 /* Blog */
 
 body.blog,#content.blog {
+    font-size: 16px;
     font-family: baramond, monospace, serif;
 }
 

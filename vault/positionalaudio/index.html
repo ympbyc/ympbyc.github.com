@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="WebAudio API Positional Audio Tutorial -- (inc altitude)">
+    <meta name="keywords"    content="WebAudio,Web Audio,positional,audio,3d audio">
+    <meta name="author"      content="Minori Yamashita">
+    <meta name="contact"     content="ympbyc@gmail.com">
     <title>Positional Audio Tutorial</title>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
@@ -49,7 +53,7 @@
         &lt;source src=&quot;bgm.ogg&quot;&gt;
     &lt;/audio&gt;
 &lt;/body&gt;</code></pre>
-          <p>Note the use of multiple <code>&lt;source&gt;</code> tag inside <code>&lt;audio&gt;</code>. Two files containing identical sound with different codecs are listed to support multiple browsers</p>
+          <p>Note the use of multiple <code>&lt;source&gt;</code> tags inside <code>&lt;audio&gt;</code>. Two files containing identical sound with different codecs are listed to support multiple browsers</p>
         </section>
         <section id="section-api">
           <h2>WEB AUDIO API</h2>
@@ -74,7 +78,7 @@
         </section>
         <section id="section-use-api">
           <h2>USING WEBAUDIO API</h2>
-          <p><code>&lt;audio&gt;</code> is a convenient way to play sounds on a web page, but it's not powerful enough to do sound processing. When you want something more control than play/pause/volume, you need to resort to using Web Audio API and managing somewhat complecated AudioContext graphs.</p>
+          <p><code>&lt;audio&gt;</code> is a convenient way to play sounds on a web page, but it's not powerful enough to do sound processing. When you want something more than play/pause/volume, you need to resort to using Web Audio API and managing somewhat complecated AudioContext graphs.</p>
           <div style="padding: 20px 80px">
             <img src="WebAudioBasics.png" alt="" class="block" />
             <small><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioNode">https://developer.mozilla.org/en-US/docs/Web/API/AudioNode</a></small>
@@ -94,7 +98,6 @@ req.onload = function () {
     });
 };
 req.send();</code></pre>
-            <p>If you are on Chrome/Safari you may need to load bgm.mp3 rather than bgm.ogg. I omit compatibility code to avoid complication.</p>
             <p>If all goes well, the sound file is successfully loaded. Let's test it by playing it.</p>
             <p>Connect the <code>AudioBufferSourceNode</code> to <code>AudioContext#destination</code>, and hit <code>start</code> on <code>AudioBufferSourceNode</code>.</p>
             <pre><code class="hljs javascript" id="demo02">source.connect(audioCtx.destination);
@@ -186,7 +189,7 @@ window.addEventListener("scroll", function (e) {
               <button class="btn-demo btn btn-green" data-codes="demo00 demo01 demo04 demo05 demo06">DEMO</button>
               <small style="font-size:10px">Tested on Firefox 35</small>
             </div>
-            <p>Clicking the button above should create a red dot in the middle of this page. Scroll around it, move your mouse, and enjoy!
+            <p>Clicking the button above should create a red dot in the middle of this page. You may wanna turn the vulume up to hear it. Scroll around it, move your mouse, and enjoy!</p>
           </div><!-- /subsection -->
         </section>
       </main>

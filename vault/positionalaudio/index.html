@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Positional Audio Tutorial</title>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_light.min.css" />
+    <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <header>
+      <nav><h1 class="global-title">POSITIONAL AUDIO TUTORIAL</h1></nav>
+    </header>
+    <div class="page-wrap flexbox flex-row">
+      <main class="box">
+        <section id="section-intro">
+          <h2>INTRODUCTION</h2>
+          <p>This tutorial teaches you how to use HTML5 WebAudio API to create a web page with positional audio.</p>
+          <div class="subsection">
+            <h3>What is Positional Audio</h3>
+            <div style="padding: 20px 80px; text-align:center">
+              <img style="width:207px;margin:0 auto;"
+                   class="block" src="positional-audio.png" alt="" />
+              <small><a href="http://www.html5rocks.com/en/tutorials/webaudio/games/">http://www.html5rocks.com/en/tutorials/webaudio/games/</a></small>
+            </div>
+            <p>Positional audio is a technique to calcurate binaural effect based on the position of a virtual speaker and your ear.</p>
+          </div>
+        </section>
+        <section id="section-audio-tag">
+          <h2>BASIC USE of HTML5 AUDIO</h2>
+          <p>It's fairly easy to utilize HTML5 audio.  Just add an <code>&lt;audio&gt;</code> tag to your html.</p>
+          <p>In this tutorial we will use the following copyleft sound file from <a href="http://dova-s.jp/bgm/play2865.html">http://dova-s.jp/bgm/play2865.html</a></p>
+          <audio controls
+                 style="display:block;margin:20px auto;">
+            <source src="bgm.mp3" />
+            <source src="bgm.ogg" />
+          </audio>
+          <pre><code class="html hljs">&lt;body&gt;
+    &lt;audio controls&gt;
+        &lt;source src=&quot;bgm.mp3&quot;&gt;
+        &lt;source src=&quot;bgm.ogg&quot;&gt;
+    &lt;/audio&gt;
+&lt;/body&gt;</code></pre>
+          <p>Note the use of multiple <code>&lt;source&gt;</code> tag inside <code>&lt;audio&gt;</code>. Two files containing identical sound with different codecs are listed to support multiple browsers</p>
+        </section>
+        <section id="section-api">
+          <h2>WEB AUDIO API</h2>
+          <div class="subsection" id="section-api-concept">
+            <h3>CONCEPT</h3>
+            <div style="padding: 20px 80px">
+              <img class="block" src="web-audio-api-flowchart.png" alt="" />
+              <small>Image from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API</a></small>
+            </div>
+            <ul style="margin:10px">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio API -- MDN</a></li>
+              <li><a href="http://www.html5rocks.com/ja/tutorials/webaudio/games/">Developing Game Audio with the Web Audio API -- HTML5 Rocks</a></li>
+            </ul>
+          </div>
+          <div class="subsection" id="section-api-availability">
+            <h3>AVAILABILITY</h3>
+            <div style="padding: 20px 80px">
+              <img class="block" alt="" src="caniuse-audio-api.png"/>
+              <small><a href="http://caniuse.com/audio-api">caniuse.com/audio-api</a> as of 3/1/2015</small>
+            </div>
+          </div>
+        </section>
+        <section id="section-use-api">
+          <h2>USING WEBAUDIO API</h2>
+          <p><code>&lt;audio&gt;</code> is a convenient way to play sounds on a web page, but it's not powerful enough to do sound processing. When you want something more control than play/pause/volume, you need to resort to using Web Audio API and managing somewhat complecated AudioContext graphs.</p>
+          <div style="padding: 20px 80px">
+            <img src="WebAudioBasics.png" alt="" class="block" />
+            <small><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioNode">https://developer.mozilla.org/en-US/docs/Web/API/AudioNode</a></small>
+          </div>
+          <div class="subsection" id="section-use-load">
+            <h3>Loading Sound File</h3>
+            <p>Create an <code>AudioContext</code>.</p>
+            <pre><code class="hljs javascript" id="demo00">var audioCtx = new (window.AudioContext || window.webkitAudioContext)();</code></pre>
+            <p>Load the sound file using <code>HMLHttpRequest</code>, decode it using <code>AudioContext#decodeAudioData</code> and feed it to <code>AudioBufferSourceNode</code></p>
+            <pre><code class="hljs javascript" id="demo01">var source = audioCtx.createBufferSource();
+var req = new XMLHttpRequest();
+req.open("GET", "./bgm.mp3", true);
+req.responseType = "arraybuffer";
+req.onload = function () {
+    audioCtx.decodeAudioData(req.response, function(buffer) {
+        source.buffer = buffer;
+    });
+};
+req.send();</code></pre>
+            <p>If you are on Chrome/Safari you may need to load bgm.mp3 rather than bgm.ogg. I omit compatibility code to avoid complication.</p>
+            <p>If all goes well, the sound file is successfully loaded. Let's test it by playing it.</p>
+            <p>Connect the <code>AudioBufferSourceNode</code> to <code>AudioContext#destination</code>, and hit <code>start</code> on <code>AudioBufferSourceNode</code>.</p>
+            <pre><code class="hljs javascript" id="demo02">source.connect(audioCtx.destination);
+source.start(0);</code></pre>
+            <div>
+              <button class="btn-demo btn btn-green" data-codes="demo00 demo01 demo02">DEMO</button>
+              <small style="font-size:10px">Tested on Firefox 35</small>
+            </div>
+          </div><!-- /subsection -->
+          <div class="subsection" id="section-use-position">
+            <h3>Positioning the Sound</h3>
+            <p>Create a <code>PannerNode</code> and setup its sound cone.  For this instance, we will create a spherical cone so only the position matters not direction.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PannerNode">PannerNode -- MDN</a></p>
+            <p>Think of a <strong>Panner</strong> as a virtual speaker, and the <strong>Listener</strong> to be your ear</p>
+            <pre><code class="hljs javascript" id="demo03">var panner = audioCtx.createPanner();
+panner.coneInnerAngle = 360;
+panner.coneOuterAngle = 0;
+panner.coneOuterGain = 0;
+//position the panner at your right hand side
+panner.setPosition(8,0,0);
+
+// Position the listener at the origin.
+audioCtx.listener.setPosition(0, 0, 0);
+
+//source -> panner -> destination
+panner.connect(audioCtx.destination);
+source.connect(panner);
+source.start(0);
+</code></pre>
+            <div>
+              <button class="btn-demo btn btn-green" data-codes="demo00 demo01 demo03">DEMO</button>
+              <small style="font-size:10px">Tested on Firefox 35</small>
+            </div>
+          </div><!-- /subsection -->
+          <div class="subsection" id="section-use-wire">
+            <h3>Wire the Panner Up with User Interaction</h3>
+            <p>We are going to place the speaker in the middle of this page so that listener's y-position changes as you scroll through.  We'll also connect the mouse's x and y position to the listeners x and z position</p>
+            <div class="hidden" id="demo04">
+              var panner = audioCtx.createPanner();
+              panner.coneInnerAngle = 360;
+              panner.coneOuterAngle = 0;
+              panner.coneOuterGain = 0;
+              panner.distanceModel = "inverse";
+
+              source.loop = true;
+              //source -> panner -> destination
+              panner.connect(audioCtx.destination);
+              source.connect(panner);
+              source.start(0);
+            </div>
+            <pre><code class="hljs javascript" id="demo05">var bodyRect = document.body.getBoundingClientRect();
+panner.setPosition(bodyRect.width/2, bodyRect.height/2 - 300, 300);
+
+function positionListener (pos) {
+  audioCtx.listener.setPosition(pos.x, pos.y, pos.z);
+}
+
+var lPos = {
+  x: 0, y: 0, z: 0
+};
+positionListener(lPos);
+
+document.addEventListener("mousemove", function (e) {
+    lPos.x = e.clientX;
+    lPos.z = e.clientY;
+    positionListener(lPos);
+});
+
+window.addEventListener("scroll", function (e) {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    lPos.y = scrollTop;
+    positionListener(lPos);
+});
+            </code></pre>
+            <div class="hidden" id="demo06">
+              var speaker = document.createElement("div");
+              speaker.className  = "speaker";
+              speaker.style.top  = (bodyRect.height/2 - 10) + "px";
+              speaker.style.left = (bodyRect.width/2 - 10) + "px";
+              document.body.appendChild(speaker);
+              sPos = {x: bodyRect.width/2, y: bodyRect.height/2 - 300, z:300}
+              setInterval(function () {
+                 console.log({x: sPos.x - lPos.x,
+                              y: sPos.y - lPos.y,
+                              z: sPos.z - lPos.z})
+              }, 3000);
+            </div>
+            <div>
+              <button class="btn-demo btn btn-green" data-codes="demo00 demo01 demo04 demo05 demo06">DEMO</button>
+              <small style="font-size:10px">Tested on Firefox 35</small>
+            </div>
+            <p>Clicking the button above should create a red dot in the middle of this page. Scroll around it, move your mouse, and enjoy!
+          </div><!-- /subsection -->
+        </section>
+      </main>
+      <aside class="box">
+        <h2>INDEX</h2>
+        <ul>
+          <li><a href="#section-intro">INTRODUCTION</a></li>
+          <li><a href="#section-audio-tag">BASIC USE of HTML5 AUDIO</a></li>
+          <li>
+            <a href="#section-api">WEB AUDIO API</a>
+            <ul>
+              <li><a href="#section-api-concept">CONCEPT</a></li>
+              <li><a href="#section-api-availability">AVAILABILITY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#section-use-api">USING WEBAUDIO API</a>
+            <ul>
+              <li><a href="#section-use-load">Loading Sound File</a></li>
+              <li><a href="#section-use-position">Positioning the Sound</a></li>
+              <li><a href="#section-use-wire">User Interaction</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

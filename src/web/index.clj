@@ -43,11 +43,11 @@
       [:img {:src "images/bike.jpg"}]]
      [:section.section
       [:h2 "Currently"]
-      [:ul [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College (Student)"]]]
-      [:h2 "Formerly"]
+      [:ul [:li [:a {:href "http://pilotz.jp/"} "PILOT"]]]
+      [:h2 "Education"]
       [:ul
-       [:li [:a {:href "http://pilotz.jp/"} "PILOT"]]
-       [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College (Student)"]]]]]
+       [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College CompSci"]]
+       [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College"]]]]]
     [:div
      [:div.section
       [:img {:src "images/nakaurawa.jpg"}]]
@@ -71,12 +71,13 @@
        [:li "Concatenative Languages"]
        [:li "Graphical Languages"]
        [:li "Functional GUI Programming"]
+       [:li "Psychedelics"]
        [:li "Painting"]
        [:li "Radio"]
        [:li "Human Powered Flying Vehicle"]
        [:li "Theoretical Physics"]
        [:li "Roguelike Games"]
-       [:li "SyFy"]]]
+       [:li "SciFy"]]]
      [:div.section
       [:img {:src "images/ring.jpg"}]]
      [:section.section
@@ -118,7 +119,7 @@
       [:div.slide
        [:script.speakerdeck-embed
         {:async      true
-         :data-id    "5094b6c9cac0440002011658"
+         :data-id    "08ee2240c557013074ff022654766eda"
          :data-ratio "1.33333333333333"
          :src        "//speakerdeck.com/assets/embed.js"}]]]
      [:div.section

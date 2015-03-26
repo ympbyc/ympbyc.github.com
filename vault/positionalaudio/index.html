@@ -134,7 +134,7 @@ source.start(0);
           </div><!-- /subsection -->
           <div class="subsection" id="section-use-wire">
             <h3>Wire the Panner Up with User Interaction</h3>
-            <p>We are going to place the speaker in the middle of this page so that listener's y-position changes as you scroll through.  We'll also connect the mouse's x and y position to the listeners x and z position</p>
+            <p>Lets place the speaker in the middle and let the listener go round it as you move your mouse.</p>
             <div class="hidden" id="demo04">
               var panner = audioCtx.createPanner();
               panner.coneInnerAngle = 360;
@@ -149,47 +149,32 @@ source.start(0);
               source.start(0);
             </div>
             <pre><code class="hljs javascript" id="demo05">var bodyRect = document.body.getBoundingClientRect();
-panner.setPosition(bodyRect.width/2, bodyRect.height/2 - 300, 300);
+panner.setPosition(0,0,0);
 
 function positionListener (pos) {
   audioCtx.listener.setPosition(pos.x, pos.y, pos.z);
 }
 
-var lPos = {
-  x: 0, y: 0, z: 0
-};
-positionListener(lPos);
+var theta = 0;
+positionListener(circleXY(0, 0, 8, theta));
+
+function circleXY (x0, y0, radius, theta) {
+  return {
+    x: (x0 + radius * Math.cos(theta)),
+    y: (y0 + radius * Math.sin(theta)),
+    z: 0
+  };
+}
 
 document.addEventListener("mousemove", function (e) {
-    lPos.x = e.clientX;
-    lPos.z = e.clientY;
-    positionListener(lPos);
-});
-
-window.addEventListener("scroll", function (e) {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    lPos.y = scrollTop;
-    positionListener(lPos);
+  theta += 0.01 % (Math.PI * 2);
+  positionListener(circleXY(0, 0, 8, theta));
 });
             </code></pre>
-            <div class="hidden" id="demo06">
-              var speaker = document.createElement("div");
-              speaker.className  = "speaker";
-              speaker.style.top  = (bodyRect.height/2 - 10) + "px";
-              speaker.style.left = (bodyRect.width/2 - 10) + "px";
-              document.body.appendChild(speaker);
-              sPos = {x: bodyRect.width/2, y: bodyRect.height/2 - 300, z:300}
-              setInterval(function () {
-                 console.log({x: sPos.x - lPos.x,
-                              y: sPos.y - lPos.y,
-                              z: sPos.z - lPos.z})
-              }, 3000);
-            </div>
             <div>
-              <button class="btn-demo btn btn-green" data-codes="demo00 demo01 demo04 demo05 demo06">DEMO</button>
+              <button class="btn-demo btn btn-green" data-codes="demo00 demo01 demo04 demo05">DEMO</button>
               <small style="font-size:10px">Tested on Firefox 35</small>
             </div>
-            <p>Clicking the button above should create a red dot in the middle of this page. You may wanna turn the vulume up to hear it. Scroll around it, move your mouse, and enjoy!</p>
           </div><!-- /subsection -->
         </section>
       </main>

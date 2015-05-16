@@ -40,7 +40,8 @@
        [:li "<" [:a {:href "mailto:ympbyc@gmail.com"} "ympbyc@gmail.com"] ">"]
        [:li [:a {:href "http://twitter.com/ympbyc"} "@ympbyc"]]]]
      [:div.section
-      [:img {:src "images/bike.jpg"}]]
+      [:img {:src "images/mainx2.png" :width "220"}]
+      [:a {:href "http://ympbyc.hatenablog.com/entry/2015/04/13/high-dimentional-cube"} "Drawing n-dimentional hypercube"]]
      [:section.section
       [:h2 "Currently"]
       [:ul [:li [:a {:href "http://pilotz.jp/"} "PILOT"]]]
@@ -71,10 +72,10 @@
        [:li "Concatenative Languages"]
        [:li "Graphical Languages"]
        [:li "Functional GUI Programming"]
-       [:li "Psychedelics"]
+       [:li "High Dimention Geometry"]
        [:li "Painting"]
        [:li "Radio"]
-       [:li "Human Powered Flying Vehicle"]
+       [:li "Autogyro"]
        [:li "Theoretical Physics"]
        [:li "Roguelike Games"]
        [:li "SciFy"]]]
@@ -90,10 +91,10 @@
         [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
         [:td "Write JavaScript in Smalltalk's Syntax"]]
        [:tr
-        [:td [:a {:href "http://ympbyc.github.io/s-exploration"} "S-exploration"]]
-        [:td "Graphical S-expression Editor"]]
+        [:td [:a {:href "https://github.com/ympbyc/kakahiaka-ide"} "Kakahiaka IDE"]]
+        [:td "Develop Flux applications on the browser"]]
        [:tr
-        [:td [:a {:href "http://ympbyc.github.io/Pasta/web/"} "Pasta"]]
+        [:td [:a {:href "https://github.com/ympbyc/kakahiaka"} "kakahiaka"]]
         [:td "Client side functional GUI programming"]]
        [:tr
         [:td [:a {:href "https://github.com/ympbyc/underscore-fix"} "Underscore-fix"]]
@@ -137,12 +138,13 @@
        [:li [:a {:href "https://gist.github.com/ympbyc/5459224"} "Getting Close To Metal: The Right Way"] " (incomplete)"]
        [:li [:a {:href "https://gist.github.com/ympbyc/5278140"} "LLerのための関数指向入門"]]]]
      [:div.section
-      [:img {:src "images/favourites.jpg"}]]
+      [:img {:src "images/bike.jpg"}]]
      [:section#links.section
       [:h2 "See Also"]
       [:ul
        [:li [:a {:href "https://github.com/ympbyc"} "ympbyc on github"]]
        [:li [:a {:href "http://d.hatena.ne.jp/ympbyc"} "標高+1m (blog)"]]
+       [:li [:a {:href  "https://www.wantedly.com/users/1509657"} "Minori Yamashita on wantedly"]]
        [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]]
     [:div
      [:div.section

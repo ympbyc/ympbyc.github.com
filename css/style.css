@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: 'HelveticaNeue-Condensed';
     src: url('../fonts/HelveticaNeue-Condensed.otf') format('opentype');
@@ -148,15 +150,13 @@ small {
 }
 
 .section {
-    height: 100%;
-    margin: 3px;
+    /*height: 100%;*/
+    margin: 12px 10px;
     position: relative;
-    margin: 3px;
     display: block;
     padding: 4px;
     overflow: hidden;
-    float: left;
-    min-width: 380px;
+    min-width: 320px;
     max-width: 380px;
     background-color: rgba(244,243,248, 0.7);
 }
@@ -183,9 +183,33 @@ small {
     margin: 100px auto;
     padding: 20px 10px 20px;
     max-width: 1200px;
-    font-family: serif;
+    font-family: 'HelveticaNeue-Condensed', Arial, sans-serif;;
+    font-weight: 100;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-items: center;
+    -webkit-align-items: center;
 }
 
+iframe  {
+    display: block;
+}
+
+ul {
+    margin: 0 14px;
+    list-style-type: circle;
+}
+
+
+.slide {
+    min-height: 300px;
+}
 
 /* Google code prettifier */
 

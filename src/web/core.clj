@@ -1,5 +1,6 @@
 (ns web.core
-  (use web.index)
+  (require [web.index :as idx])
+  (require [web.twofifteen :as twf])
   (require [hiccup.util :as hu])
   (use [web.blog :only [contents-html]])
   (:gen-class))
@@ -11,7 +12,8 @@
 
 (defn -main
   [& args]
-  (spit "index.html" (main-html))
+  (spit "index.html" (idx/main-html))
+  (spit "twofifteen.html" (twf/main-html))
 
   (doseq [blog (drop 1 blogs)]
     (spit (str "blog/" (.getName blog) ".html")

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'HelveticaNeue-Condensed';
+    src: url('../fonts/HelveticaNeue-Condensed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'baramond';
+    src: url('../fonts/Baramond.ttf') format('truetype');
+}
+
+html, body {
+    background: #f3f3f3;
+    font-family: 'HelveticaNeue-Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'HelveticaNeue-Condensed', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.flexbox {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    align-items: center;
+    -webkit-align-items: center;
+    align-content: stretch;
+    -webkit-align-content: stretch;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex-row {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+.slides {
+    height: 300px;
+    background-image: url("../images/bike.jpg");
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 4em;
+    font-family: 'HelveticaNeue-Condensed', sans-serif;
+    text-align: center;
+}
+
+.main-logo {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sticker {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 4px 6px;
+}
+
+.tile {
+    text-align: center;
+    max-width: 40%;
+    position: relative;
+    background: #fff;
+}
+
+.tile>div {
+    padding: 0 20px 1em 20px;
+}
+
+.tile>h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.tile img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+ul {
+    list-style-type: circle;
+    text-align: left;
+    line-height: 2.2em;
+    margin: 0 20px 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #737dae;
+}
+
+@media screen and (max-width: 620px) {
+    .slides {
+        height: 180px;
+    }
+
+    .tile {
+        width: 90%;
+        max-width: none;
+    }
+}

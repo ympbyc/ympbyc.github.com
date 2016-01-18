@@ -19,7 +19,12 @@
    (hp/include-js  "components/jquery/jquery.min.js")
    (hp/include-js  "components/google-code-prettify/prettify")
    (hp/include-js  "components/underscore/underscore-min.js")
-   (hp/include-js  "components/underscore-fix/underscore-fix.js")])
+   (hp/include-js  "components/underscore-fix/underscore-fix.js")
+   [:meta {:property "og:title" :content "ympbyc -- Minori Yamashita"}]
+   [:meta {:property "og:description" :content "Minori's Portfolio"}]
+   [:meta {:property "og:image" :content "smalltalk.jpg"}]
+   [:meta {:property "og:sime_name" :content "ympbyc -- Minori Yamashita"}]
+   [:meta {:property "og:type" :content "website"}]])
 
 (defn header [img title subtitle]
   [:header

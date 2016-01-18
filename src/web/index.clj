@@ -22,7 +22,7 @@
    (hp/include-js  "components/underscore-fix/underscore-fix.js")
    [:meta {:property "og:title" :content "ympbyc -- Minori Yamashita"}]
    [:meta {:property "og:description" :content "Minori's Portfolio"}]
-   [:meta {:property "og:image" :content "smalltalk.jpg"}]
+   [:meta {:property "og:image" :content "https://ympbyc.github.io/images/smalltalk.jpg"}]
    [:meta {:property "og:sime_name" :content "ympbyc -- Minori Yamashita"}]
    [:meta {:property "og:type" :content "website"}]])
 

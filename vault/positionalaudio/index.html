@@ -148,8 +148,7 @@ source.start(0);
               source.connect(panner);
               source.start(0);
             </div>
-            <pre><code class="hljs javascript" id="demo05">var bodyRect = document.body.getBoundingClientRect();
-panner.setPosition(0,0,0);
+            <pre><code class="hljs javascript" id="demo05">panner.setPosition(0,0,0);
 
 function positionListener (pos) {
   audioCtx.listener.setPosition(pos.x, pos.y, pos.z);

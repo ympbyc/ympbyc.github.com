@@ -7,7 +7,7 @@
   [:div#menu
    [:a.btn.btn-blue.page {:href "/"} "Top"]
    [:a.btn.btn-blue.page {:href "#links"} "Links"]
-   [:a.btn.btn-blue.page {:href "http://ympbyc.hatenablog.com/"} "Blog"]])
+   [:a.btn.btn-blue.page {:href "http://ympbyc.hatenablog.com/"} "Blog (Ja)"]])
 
 (defn html-head []
   [:head
@@ -38,6 +38,15 @@
   [:body {:onload "/*prettyPrint()*/"}
    (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993")
    [:div#content
+    [:div.section
+     [:img {:src "images/torii.jpg"}]
+     "Jan 2017 Karaoke Torii w/ Die Audio Gruppe"]
+    [:div.section
+     [:img {:src "images/sticky-watch-cg.png"}]
+     "Sticky Watch"]
+    [:div.section
+     [:img {:src "images/farm-watcher.jpg"}]
+     "Moisture Sensor & Display for my farm"]
     [:section.section
      [:h2 "Contacts"]
      [:ul
@@ -53,25 +62,26 @@
      [:ul [:li [:a {:href "http://proto.pilotz.jp/"} "PILOT Proto Lab"]]]
      [:h2 "Education"]
      [:ul
-      [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College CompSci"]]
+      [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College CompSci - Dropout"]]
       [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College"]]]]
     [:div.section
      [:img {:src "images/special-relativity.jpg"}]]
     [:section.section
      [:h2 "Skills"]
      [:ul
-      [:li "Fluent in Japanese + English"]
+      [:li "Fluent in Japanese & English"]
+      [:li "Analog & Digital circuit design"]
       [:li "Lisp: (Clojure & Scheme)"]
       [:li "Thorough experience with Smalltalk, JavaScript, SML, etc"]
       [:li "Juggling up to 5 balls / rings / clubs"]]]
     [:div.section
      [:img {:src "images/smalltalk.jpg"}]]
     [:section.section
-     [:h2 "Interested in"]
+     [:h2 "Things I do"]
      [:ul
-      [:li "RF Electronics"]
-      [:li "Runtime Software Development"]
-      [:li "Functional GUI Programming"]
+      [:li "Making"]
+      [:li "3D printing"]
+      [:li "Electronics Experiments"]
       [:li "Spacetime Geometry"]
       [:li "IoT as a Computational Resource"]
       [:li "Autogyro"]
@@ -81,11 +91,14 @@
      [:img {:src "images/waves.gif"}]
      [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]
     [:section.section
-     [:h2 "Pet Software Projects"]
+     [:h2 "Software Projects"]
      [:table
       [:tr
        [:td [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot"]]
        [:td "Purely Functional Poc Lisp (incomplete)"]]
+      [:tr
+       [:td [:a {:href "https://github.com/typedclojure/core.typed"} "Typed Clojure"]]
+       [:td "Optional typing in Clojure. I'm involved w/ clojurescript checker"]]
       [:tr
        [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
        [:td "Write JavaScript in Smalltalk's Syntax"]]

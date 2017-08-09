@@ -50,3 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
         requestAnimationFrame(dissolve);
     }, 20000);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var els = document.querySelectorAll(".alternate");
+    window.els = els;
+    console.log(els);
+    _.each(els, function (el) {
+        var img = document.createElement("img");
+        img.setAttribute("src", el.getAttribute("data-src-alt"));
+        img.style.display = "none";
+        document.body.appendChild(img);
+    });
+});

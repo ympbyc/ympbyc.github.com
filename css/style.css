@@ -14,9 +14,13 @@
 
 html,body {
     background-color: #eae9e4;
+    background-image: url(../images/outdoor-electronics.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     font-size: 16px;
     font-family: serif;
-    color: #262734;
+    color: #fff; /*#262734;*/
 }
 
 header h1{
@@ -71,6 +75,15 @@ pre {
 
 input {
     margin-bottom: 6px;
+}
+
+a,
+a:visited {
+    color: #6CBAD8;
+}
+
+a.btn {
+    color: #fff;
 }
 
 i {
@@ -146,19 +159,19 @@ small {
 #content>div {
     overflow: hidden;
     position: relative;
-    margin-bottom: 4px;
+    margin-bottom: 20px;
 }
 
 .section {
     /*height: 100%;*/
-    margin: 12px 10px;
+    margin: 12px 20px;
     position: relative;
     display: block;
     padding: 4px;
     overflow: hidden;
     min-width: 320px;
     max-width: 380px;
-    background-color: rgba(244,243,248, 0.7);
+    background-color: rgba(0,0,0, 0.7);
 }
 
     div.section {
@@ -335,4 +348,33 @@ body.blog,#content.blog {
 
 ul.no {
     list-style-type: none;
+}
+
+
+.image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-desc {
+    position: relative;
+    height: 200px;
+}
+
+.img-desc>div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.img-desc .desc {
+    padding: 2em 1em;
+}
+
+.img-desc:hover .image {
+    visibility: hidden;
 }

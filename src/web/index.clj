@@ -3,6 +3,19 @@
            [hiccup.util :as hu]
            [hiccup.page :as hp]))
 
+(defn img [src & [alternation]]
+  (if alternation
+    [:div.image.alternate
+     {:style (str "background-image: url(" src ");")
+      :data-src src
+      :data-src-alt alternation}]
+    [:div.image {:style (str "background-image: url(" src ");")}]))
+
+(defn img-desc [src desc]
+  [:div.img-desc
+   [:div.desc desc]
+   [:div.image {:style (str "background-image: url(" src ");")}]])
+
 (def menu
   [:div#menu
    [:a.btn.btn-blue.page {:href "/"} "Top"]
@@ -20,6 +33,7 @@
    (hp/include-js  "components/google-code-prettify/prettify")
    (hp/include-js  "components/underscore/underscore-min.js")
    (hp/include-js  "components/underscore-fix/underscore-fix.js")
+   (hp/include-js  "js/index.js")
    [:meta {:property "og:title" :content "ympbyc -- Minori Yamashita"}]
    [:meta {:property "og:description" :content "Minori's Portfolio"}]
    [:meta {:property "og:image" :content "https://ympbyc.github.io/images/smalltalk.jpg"}]
@@ -36,17 +50,27 @@
 
 (defn html-body []
   [:body {:onload "/*prettyPrint()*/"}
-   (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993")
+   (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993-")
    [:div#content
     [:div.section
-     [:img {:src "images/torii.jpg"}]
-     "Jan 2017 Karaoke Torii w/ Die Audio Gruppe"]
+     (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
+     "Maker Faire Tokyo 2017"]
     [:div.section
-     [:img {:src "images/sticky-watch-cg.png"}]
-     "Sticky Watch"]
+     (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
+     [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
+      "Jan 2017 Karaoke Torii w/ Die Audio Gruppe"]]
     [:div.section
-     [:img {:src "images/farm-watcher.jpg"}]
-     "Moisture Sensor & Display for my farm"]
+     (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
+     [:a {:href "http://proto.pilotz.jp/sticky-watch"} "Sticky Watch"]]
+    [:div.section
+     (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine. Open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
+     "DIY Pick and Place Machine"]
+    [:div.section
+     (img "images/business-card.png" "images/business-card-back.png")
+     "Business Card"]
+    [:div.section
+     (img "images/electronics-club.png" "images/drawbot-with-kids.jpg")
+     [:a {:href "http://proto.pilotz.jp/electronics"} "Kamiyama Electronics Club"]]
     [:section.section
      [:h2 "Contacts"]
      [:ul
@@ -64,23 +88,20 @@
      [:ul
       [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College CompSci - Dropout"]]
       [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College"]]]]
-    [:div.section
-     [:img {:src "images/special-relativity.jpg"}]]
     [:section.section
      [:h2 "Skills"]
      [:ul
       [:li "Fluent in Japanese & English"]
       [:li "Analog & Digital circuit design"]
       [:li "Lisp: (Clojure & Scheme)"]
-      [:li "Thorough experience with Smalltalk, JavaScript, SML, etc"]
-      [:li "Juggling up to 5 balls / rings / clubs"]]]
+      [:li "Thorough experience with JavaScript, SML, PHP, etc"]
+      [:li "Toss juggling"]]]
     [:div.section
-     [:img {:src "images/smalltalk.jpg"}]]
+     (img "images/smalltalk.jpg")]
     [:section.section
-     [:h2 "Things I do"]
+     [:h2 "Things I love"]
      [:ul
-      [:li "Making"]
-      [:li "3D printing"]
+      [:li "Making/Art"]
       [:li "Electronics Experiments"]
       [:li "Spacetime Geometry"]
       [:li "IoT as a Computational Resource"]
@@ -88,7 +109,7 @@
       [:li "SciFi"]
       [:li "Psychoactive Plants"]]]
     [:div.section
-     [:img {:src "images/waves.gif"}]
+     (img "images/waves.gif" "images/special-relativity.jpg")
      [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]
     [:section.section
      [:h2 "Software Projects"]
@@ -114,25 +135,20 @@
       [:tr
        [:td [:a {:href "https://github.com/ympbyc/js-clos"} "JS-CLOS"]]
        [:td "Multimethod in JavaScript"]]
-      [:tr
-       [:td [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"]]
-       [:td "Roguelike written in Biwascheme (incomplete)"]]
-      [:tr
-       [:td [:a {:href "http://ympbyc.github.io/coffeehack/build"} "coffeehack"]]
-       [:td "Roguelike written in Coffeescript (abandoned)"]]]]
+      (comment
+        [:tr
+         [:td [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"]]
+         [:td "Roguelike written in Biwascheme (incomplete)"]]
+        [:tr
+         [:td [:a {:href "http://ympbyc.github.io/coffeehack/build"} "coffeehack"]]
+         [:td "Roguelike written in Coffeescript (abandoned)"]])
+      ]]
     [:div.section
      [:div.slide
       [:script.speakerdeck-embed
        {:async      true
         :data-id    "8102cd705054013132c906f96a5ccdc2"
         :data-ratio "1.77777777777778"
-        :src        "//speakerdeck.com/assets/embed.js"}]]]
-    [:div.section
-     [:div.slide
-      [:script.speakerdeck-embed
-       {:async      true
-        :data-id    "08ee2240c557013074ff022654766eda"
-        :data-ratio "1.33333333333333"
         :src        "//speakerdeck.com/assets/embed.js"}]]]
     [:div.section
      [:div.slide
@@ -151,22 +167,13 @@
       [:li [:a {:href  "https://www.wantedly.com/users/1509657"} "Minori Yamashita on wantedly"]]
       [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]
     [:div.section
-     [:img {:src "images/electronics-club.png"}]
-     [:a {:href "http://proto.pilotz.jp/electronics"} "Kamiyama Electronics Club"]]
+     (img "images/painting/tajimahikawa.png")]
     [:div.section
-     [:img {:src "images/painting/tajimahikawa.png"}]]
+     (img "images/painting/nakaurawa.png")]
     [:div.section
-     [:img {:src "images/painting/kounumakawa.png"}]]
-    [:div.section
-     [:img {:src "images/painting/nakaurawa.png"}]]
-    [:div.section
-     [:a {:href "view-source:"}
-      [:img {:src "images/lisplogo_warning2.png"}]]]
-    [:div.section
+     (img "images/s-exploration.png")
      [:a {:href "http://ympbyc.github.io/s-exploration"}
-      [:img {:src "images/s-exploration.png"}]]]
-    [:div.section
-     [:img {:src "images/bike.jpg"}]]]])
+      "S-exploration"]]]])
 
 
 (defn main-html []

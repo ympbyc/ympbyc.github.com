@@ -64,8 +64,8 @@
       (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
       [:a {:href "http://proto.pilotz.jp/sticky-watch"} "Sticky Watch"]]
      [:div.section
-      (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine. Open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
-      "DIY Pick and Place Machine"]
+      (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches more efficiently. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
+      [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]]
      [:div.section
       (img "images/business-card.png" "images/business-card-back.png")
       "Business Card"]

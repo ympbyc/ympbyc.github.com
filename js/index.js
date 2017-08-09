@@ -15,8 +15,7 @@ document.addEventListener("mouseout", alternate);
 
 var images = ["images/outdoor-cooking.jpg",
               "images/outdoor-electronics.jpg",
-              "images/tanabata.jpg",
-              "images/norimixer.jpg"];
+              "images/tanabata.jpg"];
 
 document.addEventListener("DOMContentLoaded", function () {
     var dissolver = document.querySelector("#dissolver");
@@ -27,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
         if (alpha < 1) {
             requestAnimationFrame(dissolve);
-            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha + 0.01) + ")";
-            dissolver.setAttribute("data-alpha", alpha + 0.03);
+            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha + 0.02) + ")";
+            dissolver.setAttribute("data-alpha", alpha + 0.02);
             return;
         }
         body.style.backgroundImage = "url(" + images[i % images.length] + ")";
@@ -39,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
         if (alpha > 0) {
             requestAnimationFrame(clear);
-            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha - 0.01) + ")";
-            dissolver.setAttribute("data-alpha", alpha - 0.03);
+            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha - 0.02) + ")";
+            dissolver.setAttribute("data-alpha", alpha - 0.02);
             return;
         }
     }

@@ -61,14 +61,15 @@
   ],
   "education": [
     {
-      "institution": "Sierra College",
+      "institution": "Sierra College (California USA)",
       "area": "Computer Science",
       "studyType": "dropout",
       "startDate": "2013-08-27",
       "endDate": "2014-12-01",
-      "gpa": "3.3",
+      "gpa": "",
       "courses": [
-        "CSCI46 - System Programming with C"
+        "CSCI46 - System Programming with C",
+        "AAD85Web - Web Design"
       ]
     },
     {
@@ -80,6 +81,24 @@
       "gpa": "",
       "courses": [
         "Programming Languages by Dan Grossman at University of Washington"
+      ]
+    },
+    {
+      "institution": "Lynfield College (Auckland New Zealand)",
+      "area": "general education",
+      "studyType": "high school",
+      "startDate": "2009-04-01",
+      "endDate": "2012-12-01",
+      "gpa": "",
+      "courses": [
+          "Graphic Design",
+          "Art Design",
+          "Art Painting",
+          "Geography",
+          "Science Biology, Physics, Chemistry",
+          "Math statistics",
+          "English",
+          "Classical Studies"
       ]
     }
   ],

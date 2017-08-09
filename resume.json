@@ -81,8 +81,13 @@
   ],
   "awards": [
   ],
-  "publications": [
-  ],
+  "publications": [{
+      "name": "Karaoke Torii",
+      "publisher": "CODAworx",
+      "releaseDate": "2017",
+      "website": "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program",
+      "summary": "As part of Kamiyama Artist in Residence Program, I and a pair of artist from Germany and Netherlands have made an objet made of hundreds of waste loudspeakers"
+  }],
   "skills": [
     {
       "name": "Make",

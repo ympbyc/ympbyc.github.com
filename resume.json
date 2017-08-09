@@ -86,13 +86,13 @@
     {
       "institution": "Lynfield College (Auckland New Zealand)",
       "area": "general education",
-      "studyType": "high school",
+      "studyType": "",
       "startDate": "2009-04-01",
       "endDate": "2012-12-01",
       "gpa": "",
       "courses": [
+          "Graphic Design (Archtectures)",
           "Graphic Design",
-          "Art Design",
           "Art Painting",
           "Geography",
           "Science Biology, Physics, Chemistry",

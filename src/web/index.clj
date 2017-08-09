@@ -81,7 +81,7 @@
       [:a {:href "resume.html"} "Resumé in English"] [:br]
       [:a {:href "vault/resume.html"} "Resumé in Japanese 日本語履歴書"]]
      [:div.section
-      [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/PwPBY7NojgY":frameborder 0 :allowfullscreen true}]
+      [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/VnrXc3nVjkc":frameborder 0 :allowfullscreen true}]
       [:a {:href "proto.pilotz.jp/bird"} "Bird"]]
      [:section.section
       [:h2 "Currently"]

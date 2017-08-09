@@ -77,8 +77,8 @@
       [:ul
        [:li "<" [:a {:href "mailto:ympbyc@gmail.com"} "ympbyc@gmail.com"] ">"]
        [:li [:a {:href "http://twitter.com/ympbyc"} "@ympbyc"]]]
-      [:h2 "Resume"]
-      [:a {:href "resume.html"} "Resumé in English"]
+      [:h2 "Resumé"]
+      [:a {:href "resume.html"} "Resumé in English"] [:br]
       [:a {:href "vault/resume.html"} "Resumé in Japanese 日本語履歴書"]]
      [:div.section
       [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/PwPBY7NojgY":frameborder 0 :allowfullscreen true}]

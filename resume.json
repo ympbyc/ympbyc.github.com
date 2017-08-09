@@ -1,0 +1,160 @@
+{
+  "basics": {
+    "name": "Minori Yamashita",
+    "label": "Researcher / Artist",
+    "picture": "http://ympbyc.github.io/images/face.jpg",
+    "email": "ympbyc@gmail.com",
+    "phone": "",
+    "website": "http://ympbyc.github.io/",
+    "summary": "I'm a private CompSci researcher / Artist. I follow my instincts and research about the inner workings of this universe. Say bye to everything you think you know and DIY the universe.",
+    "location": {
+      "address": "--",
+      "postalCode": "--",
+      "city": "Kamiyama",
+      "countryCode": "JP",
+      "region": "Tokushima"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "ympbyc",
+        "url": ""
+      },
+      {
+        "network": "Hatena Blog",
+        "username": "ympbyc",
+        "url": "http://ympbyc.hatenablog.com"
+      }
+    ]
+  },
+  "work": [
+    {"company": "PILOT Proto Lab at PILOT Inc.",
+     "position": "Leading Researcher",
+     "website": "http://proto.pilotz.jp/",
+     "startDate": "2015-01-01",
+     "summary": "Research about theoretical aspects of IoT/M2M, Runtime software development environments.  Run a local electronic crafts club."},
+    {
+      "company": "",
+      "position": "Freelance Programmer",
+      "website": "http://ympbyc.github.io/",
+      "startDate": "2013-08-14",
+      "endDate": "2014-12-31",
+      "summary": "Freelance programmer doing web development, mobile app development, and open source contribution",
+      "highlights": [
+        "Made a few contributions to core.typed -- Clojure's static type extension -- as a participant in GSoC 2014"
+      ]
+    },
+    {
+      "company": "PILOT Inc.",
+      "position": "Software Engineer",
+      "website": "http://pilotz.jp/",
+      "startDate": "2012-04-01",
+      "endDate": "2013-08-13",
+      "summary": "Frontend JavaScript, Android app using Java/Clojure, iOS app using Titanium Mobile/Obj-C, Server side PHP/Ruby/Clojure, MySQL, CouchDB",
+      "highlights": [
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Sierra College",
+      "area": "Computer Science",
+      "studyType": "dropout",
+      "startDate": "2013-08-27",
+      "endDate": "2014-12-01",
+      "gpa": "3.3",
+      "courses": [
+        "CSCI46 - System Programming with C"
+      ]
+    },
+    {
+      "institution": "Coursera",
+      "area": "Computer Science",
+      "studyType": "",
+      "startDate": "2013-01-13",
+      "endDate": "2013-06-04",
+      "gpa": "",
+      "courses": [
+        "Programming Languages by Dan Grossman at University of Washington"
+      ]
+    }
+  ],
+  "awards": [
+  ],
+  "publications": [
+  ],
+  "skills": [
+    {
+      "name": "Make",
+      "level": "Good",
+      "keywords": [
+          "3D printer hack",
+          "Analog circuit design",
+          "Digital circuit design"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "ClojureScript"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Master",
+      "keywords": [
+        "Node",
+        "Clojure",
+        "MySQL",
+        "CouchDB"
+      ]
+    },
+    {
+      "name": "Functional Programming",
+      "level": "Master",
+      "keywords": [
+        "Scheme",
+        "Standard ML",
+        "Clojure",
+        "Type System implementation",
+        "CLOS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Japanese",
+      "fluency": "native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "TOEIC 940, TOEFL iBT 93"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Programming Language Development",
+      "keywords": [
+        "Static Type System",
+        "Lisp",
+        "CLOS",
+        "Runtime Development"
+      ]
+    },
+    {
+      "name": "CompSci * AstroPhysics",
+      "keywords": [
+        "SpaceTime Geometry",
+        "Extended-IoT",
+        "Special Relativity",
+        "Information"
+      ]
+    }
+  ],
+  "references": [
+  ]
+}

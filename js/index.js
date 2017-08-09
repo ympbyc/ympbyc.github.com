@@ -55,9 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var els = document.querySelectorAll(".alternate");
     window.els = els;
     console.log(els);
-    _.each(els, function (el) {
+    _.chain(els).map(function (el) {
+        return el.getAttribute("data-src-alt");
+    }).union(images).each(function (url) {
         var img = document.createElement("img");
-        img.setAttribute("src", el.getAttribute("data-src-alt"));
+        img.setAttribute("src", url);
         img.style.display = "none";
         document.body.appendChild(img);
     });

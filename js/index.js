@@ -11,3 +11,43 @@ function alternate (e) {
 
 document.addEventListener("mouseover", alternate);
 document.addEventListener("mouseout", alternate);
+
+
+var images = ["images/outdoor-cooking.jpg",
+              "images/outdoor-electronics.jpg",
+              "images/tanabata.jpg",
+              "images/norimixer.jpg"];
+
+document.addEventListener("DOMContentLoaded", function () {
+    var dissolver = document.querySelector("#dissolver");
+    var body = document.body;
+    var i = 0;
+
+    function dissolve () {
+        var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
+        if (alpha < 1) {
+            requestAnimationFrame(dissolve);
+            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha + 0.01) + ")";
+            dissolver.setAttribute("data-alpha", alpha + 0.03);
+            return;
+        }
+        body.style.backgroundImage = "url(" + images[i % images.length] + ")";
+        requestAnimationFrame(clear);
+    }
+
+    function clear () {
+        var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
+        if (alpha > 0) {
+            requestAnimationFrame(clear);
+            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha - 0.01) + ")";
+            dissolver.setAttribute("data-alpha", alpha - 0.03);
+            return;
+        }
+    }
+
+
+    setInterval(function () {
+        i++;
+        requestAnimationFrame(dissolve);
+    }, 10000);
+});

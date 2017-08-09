@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         body.style.backgroundImage = "url(" + images[i % images.length] + ")";
-        requestAnimationFrame(clear);
+        setTimeout(_.partial(requestAnimationFrame, clear), 1000);
     }
 
     function clear () {

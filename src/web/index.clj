@@ -161,10 +161,11 @@
      [:div.section
       [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
      [:section#links.section
-      [:h2 "See Also"]
+      [:h2 "See Also (Links)"]
       [:ul
        [:li [:a {:href "https://github.com/ympbyc"} "ympbyc on github"]]
        [:li [:a {:href "http://d.hatena.ne.jp/ympbyc"} "標高+1m (blog)"]]
+       [:li [:a {:href "https://www.youtube.com/channel/UCoZPJbl8xxx8OSo7KSy29vA"}]]
        [:li [:a {:href  "https://www.wantedly.com/users/1509657"} "Minori Yamashita on wantedly"]]
        [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]
      [:div.section

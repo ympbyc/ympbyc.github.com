@@ -35,7 +35,7 @@
    (hp/include-js  "components/underscore-fix/underscore-fix.js")
    (hp/include-js  "js/index.js")
    [:meta {:property "og:title" :content "ympbyc -- Minori Yamashita"}]
-   [:meta {:property "og:description" :content "Minori's Portfolio"}]
+   [:meta {:property "og:description" :content "Portfolio Minori Yamashita a private researcher"}]
    [:meta {:property "og:image" :content "https://ympbyc.github.io/images/business-card.png"}]
    [:meta {:property "og:sime_name" :content "ympbyc -- Minori Yamashita"}]
    [:meta {:property "og:type" :content "website"}]])

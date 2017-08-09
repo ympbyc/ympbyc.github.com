@@ -55,7 +55,7 @@
     [:div#content
      [:div.section
       (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
-      "Maker Faire Tokyo 2017"]
+      [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]]
      [:div.section
       (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
       [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}

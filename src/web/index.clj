@@ -103,12 +103,12 @@
       [:h2 "Things I love"]
       [:ul
        [:li "Making/Art"]
+       [:li "Forest Making"]
        [:li "Electronics Experiments"]
        [:li "Spacetime Geometry"]
        [:li "IoT as a Computational Resource"]
        [:li "Autogyro"]
-       [:li "SciFi"]
-       [:li "Psychoactive Plants"]]]
+       [:li "Psychedelics"]]]
      [:div.section
       (img "images/waves.gif" "images/special-relativity.jpg")
       [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]

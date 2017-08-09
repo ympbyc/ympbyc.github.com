@@ -55,7 +55,7 @@
     [:div#content
      [:div.section
       (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
-      "Maker Faire Tokyo 2017"]
+      [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]]
      [:div.section
       (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
       [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
@@ -64,7 +64,7 @@
       (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
       [:a {:href "http://proto.pilotz.jp/sticky-watch"} "Sticky Watch"]]
      [:div.section
-      (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches more efficiently. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
+      (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches efficient. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
       [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]]
      [:div.section
       (img "images/business-card.png" "images/business-card-back.png")

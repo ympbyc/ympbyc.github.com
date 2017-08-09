@@ -1,0 +1,205 @@
+{
+  "basics": {
+    "name": "山下実則",
+    "label": "研究者 / アーティスト",
+    "picture": "http://ympbyc.github.io/images/face.jpg",
+    "email": "ympbyc@gmail.com",
+    "phone": "",
+    "website": "http://ympbyc.github.io/",
+    "summary": "民間のコンピュータサイエンス研究者で、アーティストです。プログラミング言語の処理系やIoT/M2Mの研究、電気を使ったアートやお祭りにも出没します。徳島県は神山町在住です。",
+    "location": {
+      "address": "--",
+      "postalCode": "--",
+      "city": "神山町",
+      "countryCode": "日本",
+      "region": "徳島県"
+    },
+    "profiles": [
+      {
+        "network": "facebook",
+        "username": "minori.yamashita",
+        "url": "https://www.facebook.com/minori.yamashita"
+      },
+      {
+        "network": "Hatena Blog",
+        "username": "ympbyc",
+        "url": "http://ympbyc.hatenablog.com"
+      }
+    ]
+  },
+  "work": [
+    {"company": "神山メイカースペース",
+     "position": "理事",
+     "website": "http://kamiyama.ms/",
+     "startDate": "2016-04-01",
+     "summary": "徳島県の山奥にファブ施設を作りました。田舎なのにアーティストやエンジニアがゴロゴロいる不思議な町で、デジタルファブリケーションの普及を図っています。"
+    },
+    {"company": "PILOT Proto Lab at PILOT Inc.",
+     "position": "研究者/アーティスト",
+     "website": "http://proto.pilotz.jp/",
+     "startDate": "2015-01-01",
+     "summary": "自分で考えた電子製品とその生産設備の製作、IoT/M2M/強いAIの基礎研究、国がなくなっても生き残るための森づくり、神山電子工作クラブのオーガナイズなど",
+     "highlights": [
+       "神山メイカースペースの立ち上げに協力",
+       "Die Audio Gruppe名義で捨てられる運命のスピーカを300個使ったオブジェを共同製作",
+       "Maker Faire 2017に出展し、DIYの電子製品の生産設備を展示した"
+     ]
+    },
+    {
+      "company": "",
+      "position": "フリーランスプログラマー",
+      "website": "http://ympbyc.github.io/",
+      "startDate": "2013-08-14",
+      "endDate": "2014-12-31",
+      "summary": "アメリカのコミュニティーカレッジで勉強する傍ら、ウェブサービス/スマホアプリの制作や、オープンソースプロジェクトへのコントリビューションなどを行っていました",
+      "highlights": [
+        "Clojureのオプショナルな静的型チェッカ Typed Clojure (core.typed) の開発に参加。Google Summer of Code 2014"
+      ]
+    },
+    {
+      "company": "Kenro's A taste of Japan",
+      "position": "マネージャー/スシシェフ",
+      "website": "",
+      "startDate": "2014-01-01",
+      "endDate": "2014-12-31",
+      "summary": "アメリカはカリフォルニア州の寿司屋で、スシを握ったり、給仕をしたり、マネージャー業をしたり、ウェブサイトの管理をしたりしていました。カリフォルニアロールを巻くのが得意です。"
+    },
+    {
+      "company": "PILOT Inc.",
+      "position": "Software Engineer",
+      "website": "http://pilotz.jp/",
+      "startDate": "2012-04-01",
+      "endDate": "2013-08-13",
+      "summary": "フロントエンドJS, Java/Clojure/Obj-Cを利用したAndroidアプリの制作, サーバーサイドPHP/Ruby/Clojure,MySQL,CouchDB",
+      "highlights": [
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Sierra College (California USA)",
+      "area": "Computer Science",
+      "studyType": "dropout",
+      "startDate": "2013-08-27",
+      "endDate": "2014-12-01",
+      "gpa": "",
+      "courses": [
+        "CSCI46 - System Programming with C",
+        "AAD85Web - Web Design"
+      ]
+    },
+    {
+      "institution": "Coursera",
+      "area": "Computer Science",
+      "studyType": "",
+      "startDate": "2013-01-13",
+      "endDate": "2013-06-04",
+      "gpa": "",
+      "courses": [
+        "Programming Languages by Dan Grossman at University of Washington"
+      ]
+    },
+    {
+      "institution": "Lynfield College (Auckland New Zealand)",
+      "area": "general education",
+      "studyType": "",
+      "startDate": "2009-04-01",
+      "endDate": "2012-12-01",
+      "gpa": "",
+      "courses": [
+          "グラフィック(建築, CAD)",
+          "グラフィックデザイン",
+          "アート(絵画)",
+          "世界地理",
+          "生物,化学,物理",
+          "数学(統計)",
+          "英語",
+          "クラシックスタディーズ(古代ギリシャ/ローマ)"
+      ]
+    }
+  ],
+  "awards": [
+  ],
+  "publications": [{
+      "name": "カラオケ鳥居",
+      "publisher": "CODAworx",
+      "releaseDate": "2017",
+      "website": "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program",
+      "summary": "神山アーティストインレジデンスプログラムの一環として、ドイツ人とオランダ人のアーティストと、捨てられる運命のスピーカーを300個結線した音がなるオブジェを制作しました。"
+  }],
+  "skills": [
+    {
+      "name": "Make",
+      "level": "Good",
+      "keywords": [
+          "3Dプリンターの改造",
+          "アナログ回路設計",
+          "デジタル回路設計"
+      ]
+    },
+    {
+      "name": "フロントエンド",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "ClojureScript"
+      ]
+    },
+    {
+      "name": "バックエンド",
+      "level": "Master",
+      "keywords": [
+        "Node",
+        "Clojure",
+        "MySQL",
+        "CouchDB"
+      ]
+    },
+    {
+      "name": "関数型プログラミング",
+      "level": "Master",
+      "keywords": [
+        "Scheme",
+        "Standard ML",
+        "Clojure",
+        "Type System implementation",
+        "CLOS",
+        "Functional GUI Programming"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "日本語",
+      "fluency": "ネイティブスピーカー"
+    },
+    {
+      "language": "英語",
+      "fluency": "流暢. TOEIC 940, TOEFL iBT 93"
+    }
+  ],
+  "interests": [
+    {
+      "name": "処理系開発",
+      "keywords": [
+        "静的型システム",
+        "Lisp",
+        "CLOS",
+        "ランタイム開発環境"
+      ]
+    },
+    {
+      "name": "コンピュータサイエンス×宇宙物理学",
+      "keywords": [
+        "時空幾何学",
+        "拡張IoT",
+        "特殊相対性理論",
+        "情報"
+      ]
+    }
+  ],
+  "references": [
+  ]
+}

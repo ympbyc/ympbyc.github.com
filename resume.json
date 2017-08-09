@@ -28,12 +28,20 @@
     ]
   },
   "work": [
+    {"company": "Kamiyama Makerspace",
+     "position": "Director",
+     "website": "http://kamiyama.ms/",
+     "startDate": "2016-04-01",
+     "summary": "A unique makerspace situated in a midst of mountains of Shikoku Japan.  Although very rural, this town has a lot of artists and engineers and our mission is to introduce the maker spirit to the town and sorrounding regions"
+    },
     {"company": "PILOT Proto Lab at PILOT Inc.",
      "position": "Leading Researcher",
      "website": "http://proto.pilotz.jp/",
      "startDate": "2015-01-01",
      "summary": "Research about theoretical aspects of IoT/M2M, Lead a local electronics club. DIY electronic products and production facility.",
      "highlights": [
+       "Helped Kamiyama Makerspace come to life",
+       "Made a huge objet as a member of Die Audio Gruppe",
        "Showed off my work at Maker Faire Tokyo 2017"
      ]
     },
@@ -47,6 +55,14 @@
       "highlights": [
         "Made a few contributions to core.typed -- Clojure's static type extension -- as a participant in GSoC 2014"
       ]
+    },
+    {
+      "company": "Kenro's A taste of Japan",
+      "position": "Manager / Sushi Chef",
+      "website": "",
+      "startDate": "2014-01-01",
+      "endDate": "2014-12-31",
+      "summary": "I was a manager, sushi chef, server, and web guy at a sushi restaurant in California USA. I'm highly skilled in rolling California rolls"
     },
     {
       "company": "PILOT Inc.",
@@ -91,7 +107,7 @@
       "endDate": "2012-12-01",
       "gpa": "",
       "courses": [
-          "Graphic Design (Archtectures)",
+          "Graphics (Archtectures, CAD)",
           "Graphic Design",
           "Art Painting",
           "Geography",
@@ -109,7 +125,7 @@
       "publisher": "CODAworx",
       "releaseDate": "2017",
       "website": "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program",
-      "summary": "As part of Kamiyama Artist in Residence Program, I and a pair of artist from Germany and Netherlands have made an objet made of hundreds of waste loudspeakers"
+      "summary": "As part of Kamiyama Artist in Residence Program, I and a pair of artists from Germany and Netherlands have made an objet made of hundreds of waste loudspeakers"
   }],
   "skills": [
     {
@@ -160,7 +176,7 @@
     },
     {
       "language": "English",
-      "fluency": "TOEIC 940, TOEFL iBT 93"
+      "fluency": "fluent. TOEIC 940, TOEFL iBT 93"
     }
   ],
   "interests": [

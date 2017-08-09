@@ -48,5 +48,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         i++;
         requestAnimationFrame(dissolve);
-    }, 10000);
+    }, 20000);
 });

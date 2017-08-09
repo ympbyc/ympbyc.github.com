@@ -13,8 +13,9 @@ document.addEventListener("mouseover", alternate);
 document.addEventListener("mouseout", alternate);
 
 
-var images = ["images/outdoor-cooking.jpg",
-              "images/outdoor-electronics.jpg",
+var images = ["images/outdoor-electronics.jpg",
+              "images/river.jpg",
+              "images/outdoor-cooking.jpg",
               "images/tanabata.jpg"];
 
 document.addEventListener("DOMContentLoaded", function () {

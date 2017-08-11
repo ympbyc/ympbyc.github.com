@@ -166,8 +166,6 @@
          :data-id    "6e9fc0503251013041d412313d06f1ad"
          :data-ratio "1.33333333333333"
          :src        "//speakerdeck.com/assets/embed.js"}]]]
-     [:div.section
-      [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
      [:section#links.section
       [:h2 "See Also (Links)"]
       [:ul
@@ -176,6 +174,8 @@
        [:li [:a {:href "https://www.youtube.com/channel/UCoZPJbl8xxx8OSo7KSy29vA"} "YouTube"]]
        [:li [:a {:href  "https://www.wantedly.com/users/1509657"} "Minori Yamashita on wantedly"]]
        [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]
+     [:div.section
+      [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
      [:div.section
       (img "images/painting/tajimahikawa.png")]
      [:div.section

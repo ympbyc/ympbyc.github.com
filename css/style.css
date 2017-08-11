@@ -382,3 +382,12 @@ ul.no {
 .img-desc:hover .image {
     visibility: hidden;
 }
+
+
+.belt {
+    width: 100%;
+    margin: 0 40px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 0.2em;
+    text-align: center;
+}

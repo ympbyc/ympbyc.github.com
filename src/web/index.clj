@@ -67,11 +67,13 @@
       (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches efficient. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
       [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]]
      [:div.section
-      (img "images/business-card.png" "images/business-card-back.png")
-      "Business Card"]
+      (img-desc "images/solar-hut-project.png" [:p "Let's live primitive with technology. The solar hut set can power a light, fan, and computers"])
+      "Solar Hut Project"]
      [:div.section
       (img "images/electronics-club.png" "images/drawbot-with-kids.jpg")
       [:a {:href "http://proto.pilotz.jp/electronics"} "Kamiyama Electronics Club"]]
+     [:div.belt
+      "A planet with no boundary between technology and nature"]
      [:section.section
       [:h2 "Contacts"]
       [:ul
@@ -81,8 +83,8 @@
       [:a {:href "resume.html"} "Resumé in English"] [:br]
       [:a {:href "vault/resume.html"} "Resumé in Japanese 日本語履歴書"]]
      [:div.section
-      [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/VnrXc3nVjkc":frameborder 0 :allowfullscreen true}]
-      [:a {:href "http://proto.pilotz.jp/bird"} "Bird"]]
+      (img "images/business-card.png" "images/business-card-back.png")
+      "Business Card"]
      [:section.section
       [:h2 "Currently"]
       [:ul [:li [:a {:href "http://proto.pilotz.jp/"} "PILOT Proto Lab"]]]
@@ -96,7 +98,7 @@
        [:li "Fluent in Japanese & English"]
        [:li "Analog & Digital circuit design"]
        [:li "Lisp: (Clojure & Scheme)"]
-       [:li "Thorough experience with JavaScript, SML, PHP, etc"]
+       [:li "JavaScript, SML, PHP, + many more"]
        [:li "Toss juggling"]]]
      [:div.section
       (img "images/smalltalk.jpg")]
@@ -110,6 +112,8 @@
        [:li "IoT as a Computational Resource"]
        [:li "Autogyro"]
        [:li "Psychedelics"]]]
+     [:div.belt
+      "Flip the universe inside out leaving behind everything I knew."]
      [:div.section
       (img "images/waves.gif" "images/special-relativity.jpg")
       [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]
@@ -121,7 +125,7 @@
         [:td "Purely Functional Poc Lisp (incomplete)"]]
        [:tr
         [:td [:a {:href "https://github.com/typedclojure/core.typed"} "Typed Clojure"]]
-        [:td "Optional typing in Clojure. I'm involved w/ clojurescript checker"]]
+        [:td "Optional typing in Clojure. I worked on the clojurescript checker"]]
        [:tr
         [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
         [:td "Write JavaScript in Smalltalk's Syntax"]]
@@ -145,6 +149,9 @@
           [:td [:a {:href "http://ympbyc.github.io/coffeehack/build"} "coffeehack"]]
           [:td "Roguelike written in Coffeescript (abandoned)"]])
        ]]
+     [:div.section
+      [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/VnrXc3nVjkc":frameborder 0 :allowfullscreen true}]
+      [:a {:href "http://proto.pilotz.jp/bird"} "Bird"]]
      [:div.section
       [:div.slide
        [:script.speakerdeck-embed
@@ -173,10 +180,11 @@
       (img "images/painting/tajimahikawa.png")]
      [:div.section
       (img "images/painting/nakaurawa.png")]
-     [:div.section
-      (img "images/s-exploration.png")
-      [:a {:href "http://ympbyc.github.io/s-exploration"}
-       "S-exploration"]]]]
+     (comment
+       [:div.section
+       (img "images/s-exploration.png")
+       [:a {:href "http://ympbyc.github.io/s-exploration"}
+        "S-exploration"]])]]
    ])
 
 

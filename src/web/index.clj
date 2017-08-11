@@ -122,7 +122,7 @@
       [:table
        [:tr
         [:td [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot"]]
-        [:td "Purely Functional Poc Lisp (incomplete)"]]
+        [:td "Purely Functional Lisp w/ static multimethod"]]
        [:tr
         [:td [:a {:href "https://github.com/typedclojure/core.typed"} "Typed Clojure"]]
         [:td "Optional typing in Clojure. I worked on the clojurescript checker"]]

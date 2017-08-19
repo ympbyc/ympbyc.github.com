@@ -426,7 +426,7 @@ ul.no {
 }
 
 .detail img {
-    max-height: 600px;
+    max-height: 500px;
 }
 .detail>.desc {
     position: absolute;

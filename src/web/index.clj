@@ -85,15 +85,27 @@
         [:h1 "Sticky Watch"]
         [:p "An electronic replacement for sticky-notes. Records up to 5 short voice messages. I designed and made the board, case, and cover so it's 99% DIY"]]]]
      
-     [:div.section
+     [:div.section.pointer
       (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches efficient. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
-      [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]]
-     [:div.section
+      [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]
+      [:div.detail
+       (img-flex "images/3dpnp.jpg")]]
+     
+     [:div.section.pointer
       (img-desc "images/solar-hut-project.png" [:p "Let's live primitive with technology. The solar hut set can power a light, fan, and computers"])
-      "Solar Hut Project"]
-     [:div.section
+      "Solar Hut Project"
+      [:div.detail
+       (img-flex "images/solar-hut-project.png")]]
+     
+     [:div.section.pointer
       (img "images/electronics-club.png" "images/drawbot-with-kids.jpg")
-      [:a {:href "http://proto.pilotz.jp/electronics"} "Kamiyama Electronics Club"]]
+      [:a {:href "http://proto.pilotz.jp/electronics"} "Kamiyama Electronics Club"]
+      [:div.detail
+       (img-flex "images/electronics-club.png" "images/drawbot-with-kids.jpg")
+       [:div.desc
+        [:h1 "Kamiyama Electronic Kids"]
+        [:p "Every Thursday afterschool, we gather and play with electronics and computers. Check out the website to see some of the projects we did."]]]]
+     
      [:div.belt
       "A planet with no boundary between technology and nature"]
      [:section.section

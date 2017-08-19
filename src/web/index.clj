@@ -37,6 +37,8 @@
    (hp/include-js  "components/underscore/underscore-min.js")
    (hp/include-js  "components/underscore-fix/underscore-fix.js")
    (hp/include-js  "js/index.js")
+   (hp/include-js  "https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js")
+   (hp/include-js  "http://proto.pilotz.jp/js/font-helvetiker.js")
    [:meta {:property "og:title" :content "ympbyc -- Minori Yamashita"}]
    [:meta {:property "og:description" :content "Portfolio Minori Yamashita a private researcher"}]
    [:meta {:property "og:image" :content "https://ympbyc.github.io/images/business-card.png"}]
@@ -74,7 +76,7 @@
        (img-flex "images/torii.jpg")
        [:div.desc
         [:h1 "Karaoke Torii"]
-        [:p "In january 2017, Benoit Maubrey, Gerrit de Vries, and I produced this monsterous sculpture or objet.  The objet has a bluetooth port open everyday which anybody can bring his/her phone to play their favorite music."]]]]
+        [:p "In january 2017, Benoit Maubrey, Gerrit de Vries, and I produced this monsterous sculpture or objet.  The objet has a bluetooth port open everyday which anybody can connect with his/her phone to play their favorite music."]]]]
      
      [:div.section.pointer
       (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
@@ -108,6 +110,7 @@
      
      [:div.belt
       "A planet with no boundary between technology and nature"]
+     
      [:section.section
       [:h2 "Contacts"]
       [:ul
@@ -208,6 +211,10 @@
        [:li [:a {:href "https://www.youtube.com/channel/UCoZPJbl8xxx8OSo7KSy29vA"} "YouTube"]]
        [:li [:a {:href  "https://www.wantedly.com/users/1509657"} "Minori Yamashita on wantedly"]]
        [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]
+
+     [:div.belt
+      "Stop stopping and reflecting. Live vigorously uninhibited."]
+     
      [:div.section
       [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
      [:div.section.pointer
@@ -218,12 +225,18 @@
       (img "images/painting/nakaurawa.png")
       [:div.detail
        (img-flex "images/painting/nakaurawa.png")]]
+     [:div.section
+      [:div#section-gallery
+       [:div.content ]]
+      [:a {:href "http://proto.pilotz.jp/"} "PILOT PROTO LAB"]]
+     
      (comment
        [:div.section
        (img "images/s-exploration.png")
        [:a {:href "http://ympbyc.github.io/s-exploration"}
         "S-exploration"]])]
     [:div#overlay]]
+   (hp/include-js  "js/torus.js")
    ])
 
 

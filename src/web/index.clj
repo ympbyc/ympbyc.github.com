@@ -16,6 +16,9 @@
    [:div.desc desc]
    [:div.image {:style (str "background-image: url(" src ");")}]])
 
+(defn img-flex [& srcs]
+  [:div.flexbox.no-wrap.align-top (map (fn [src] [:img {:src src :alt src}]) srcs)])
+
 (def menu
   [:div#menu
    [:a.btn.btn-blue.page {:href "/"} "Top"]
@@ -52,17 +55,36 @@
   [:body {:onload "/*prettyPrint()*/"}
    [:div#dissolver {:data-alpha 0}
     (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993-")
-    [:div#content
-     [:div.section
+    [:div#content.flexbox
+     [:div.section.pointer
       (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
-      [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]]
-     [:div.section
+      [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]
+      [:div.detail
+       (img-flex "images/makerfaire2.jpg"
+                 "images/makerfaire.jpg")
+       [:div.desc
+        [:h1 "Maker Faire Tokyo 2017"]
+        [:p "I brought some sticky-watches and the 3D-PnP to show off to the makers in Japan.  I had a lot of fun with people sharing enthusiasm."]]]]
+     
+     [:div.section.pointer
       (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
       [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
-       "Jan 2017 Karaoke Torii w/ Die Audio Gruppe"]]
-     [:div.section
+       "Jan 2017 Karaoke Torii w/ Die Audio Gruppe"]
+      [:div.detail
+       (img-flex "images/torii.jpg")
+       [:div.desc
+        [:h1 "Karaoke Torii"]
+        [:p "In january 2017, Benoit Maubrey, Gerrit de Vries, and I produced this monsterous sculpture or objet.  The objet has a bluetooth port open everyday which anybody can bring his/her phone to play their favorite music."]]]]
+     
+     [:div.section.pointer
       (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
-      [:a {:href "http://proto.pilotz.jp/sticky-watch"} "Sticky Watch"]]
+      [:a {:href "http://proto.pilotz.jp/sticky-watch"} "Sticky Watch"]
+      [:div.detail
+       (img-flex "images/sticky-watch.jpg")
+       [:div.desc
+        [:h1 "Sticky Watch"]
+        [:p "An electronic replacement for sticky-notes. Records up to 5 short voice messages. I designed and made the board, case, and cover so it's 99% DIY"]]]]
+     
      [:div.section
       (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches efficient. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
       [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]]
@@ -184,7 +206,8 @@
        [:div.section
        (img "images/s-exploration.png")
        [:a {:href "http://ympbyc.github.io/s-exploration"}
-        "S-exploration"]])]]
+        "S-exploration"]])]
+    [:div#overlay]]
    ])
 
 

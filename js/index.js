@@ -65,3 +65,49 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.appendChild(img);
     });
 });
+
+function detatchNode (node) {
+    var parent = node.parentNode;
+    parent.removeChild(node);
+    return node;
+}
+
+function animateStyle (el, accessors, prop, before, after, init, stop, step, cb) {
+    cb = cb || function () {};
+    var anim;
+    var x = init;
+    var obj = _.foldl(accessors, function (prop, accsr) {
+        return prop[accsr];
+    }, el);
+    requestAnimationFrame(anim = function () {
+        if ((init < stop && x >= stop)
+            || (init > stop && x <= stop))
+        { cb(); return; }
+        requestAnimationFrame(anim);
+        obj[prop] = before + x + after;
+        x += step;
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    var sects = document.querySelectorAll("#content>.section");
+    var overlay = document.querySelector("#overlay");
+    _.each(sects, function (el) {
+        el.addEventListener("click", function (e) {
+            e.stopPropagation();
+            var detail = el.querySelector(".detail");
+            if (! detail) return;
+            var node = detail.cloneNode(true);
+            overlay.appendChild(node);
+            overlay.style.visibility = "visible";
+            node.style.display = "block";
+            animateStyle(overlay, ["style"], "opacity", "", "", 0, 1, 0.02);
+        });
+    });
+    overlay.addEventListener("click", function (e) {
+        animateStyle(overlay, ["style"], "opacity", "", "", 1, 0, -0.02, function () {
+            overlay.style.visibility = "hidden";
+            overlay.removeChild(overlay.firstChild);
+        });
+    });
+});

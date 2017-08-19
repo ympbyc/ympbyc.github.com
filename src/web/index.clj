@@ -210,10 +210,14 @@
        [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Minori Yamashita on facebook"]]]]
      [:div.section
       [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
-     [:div.section
-      (img "images/painting/tajimahikawa.png")]
-     [:div.section
-      (img "images/painting/nakaurawa.png")]
+     [:div.section.pointer
+      (img "images/painting/tajimahikawa.png")
+      [:div.detail
+       (img-flex "images/painting/tajimahikawa.png")]]
+     [:div.section.pointer
+      (img "images/painting/nakaurawa.png")
+      [:div.detail
+       (img-flex "images/painting/nakaurawa.png")]]
      (comment
        [:div.section
        (img "images/s-exploration.png")

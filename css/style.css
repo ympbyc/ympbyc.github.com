@@ -172,6 +172,7 @@ small {
     min-width: 320px;
     max-width: 380px;
     background-color: rgba(0,0,0, 0.7);
+    filter: drop-shadow(1px 1px 4px #333);
 }
 
     div.section {

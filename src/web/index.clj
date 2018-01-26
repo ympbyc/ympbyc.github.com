@@ -23,7 +23,8 @@
   [:div#menu
    [:a.btn.btn-blue.page {:href "/"} "Top"]
    [:a.btn.btn-blue.page {:href "#links"} "Links"]
-   [:a.btn.btn-blue.page {:href "http://ympbyc.hatenablog.com/"} "Blog (Ja)"]])
+   [:a.btn.btn-blue.page {:href "http://ympbyc.hatenablog.com/"} "Blog1 (Ja)"]
+   [:a.btn.btn-blue.page {:href "http://mechanic.pilotz.jp/"} "Blog2 (Ja)"]])
 
 (defn html-head []
   [:head

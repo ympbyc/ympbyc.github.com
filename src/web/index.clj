@@ -201,14 +201,14 @@
          :data-id    "8102cd705054013132c906f96a5ccdc2"
          :data-ratio "1.77777777777778"
          :src        "//speakerdeck.com/assets/embed.js"}]]]
-     [:div.section
+     [:div#links.section
       [:div.slide
        [:script.speakerdeck-embed
         {:async      true
          :data-id    "6e9fc0503251013041d412313d06f1ad"
          :data-ratio "1.33333333333333"
          :src        "//speakerdeck.com/assets/embed.js"}]]]
-     [:section#links.section
+     [:section.section
       [:h2 "See Also (Links)"]
       [:ul
        [:li [:a {:href "https://github.com/ympbyc"} "GitHub"]]

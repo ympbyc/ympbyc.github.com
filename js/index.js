@@ -101,10 +101,19 @@ document.addEventListener("DOMContentLoaded", function () {
             overlay.appendChild(node);
             overlay.style.visibility = "visible";
             node.style.display = "block";
-            animateStyle(overlay, ["style"], "opacity", "", "", 0, 1, 0.02);
+            if (detail.classList.contains("no-transition"))
+                overlay.style.opacity = 1;
+            else
+                animateStyle(overlay, ["style"], "opacity", "", "", 0, 1, 0.02);
         });
     });
     overlay.addEventListener("click", function (e) {
+        if (overlay.querySelector(".detail").classList.contains("no-transition")) {
+            overlay.style.opacity = 0;
+            overlay.style.visibility = "hidden";
+            overlay.removeChild(overlay.firstChild);
+            return;
+        }
         animateStyle(overlay, ["style"], "opacity", "", "", 1, 0, -0.02, function () {
             overlay.style.visibility = "hidden";
             overlay.removeChild(overlay.firstChild);

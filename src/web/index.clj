@@ -224,6 +224,10 @@
      [:div.section
       [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
      [:div.section.pointer
+      (img "images/cactus.jpg")
+      [:div.detail
+       (img-flex "images/cactus.jpg")]]
+     [:div.section.pointer
       (img "images/painting/tajimahikawa.png")
       [:div.detail
        (img-flex "images/painting/tajimahikawa.png")]]

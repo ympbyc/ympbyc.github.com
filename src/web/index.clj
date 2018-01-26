@@ -59,6 +59,14 @@
     (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993-")
     [:div#content.flexbox
      [:div.section.pointer
+      (img "images/dfk-action.png" "images/dfk-koyomanmaku.png")
+      [:a {:href "https://youtu.be/a671ua0ELFU"} "Digital Fusuma Karakuri"]
+      [:div.detail
+       [:iframe {:width "560" :height "315" :src "https://www.youtube.com/embed/a671ua0ELFU" :frameborder "0" :allow "autoplay; encrypted-media" :allowfullscreen true}]
+       [:div.desc
+        [:h1 "Digital Fusuma Karakuri"]
+        [:p "Website coming soon"]]]]
+     [:div.section.pointer
       (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
       [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]
       [:div.detail
@@ -67,7 +75,7 @@
        [:div.desc
         [:h1 "Maker Faire Tokyo 2017"]
         [:p "I brought some sticky-watches and the 3D-PnP to show off to the makers in Japan.  I had a lot of fun with people sharing enthusiasm."]]]]
-     
+
      [:div.section.pointer
       (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
       [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
@@ -76,8 +84,10 @@
        (img-flex "images/torii.jpg")
        [:div.desc
         [:h1 "Karaoke Torii"]
-        [:p "In january 2017, Benoit Maubrey, Gerrit de Vries, and I produced this monsterous sculpture or objet.  The objet has a bluetooth port open everyday which anybody can connect with his/her phone to play their favorite music."]]]]
-     
+        [:p "In january 2017, Benoit Maubrey, Gerrit de Vries, and I produced this monsterous sculpture or objet.  The objet has a bluetooth port open everyday which anybody can connect with his/her phone to play their favorite music."]
+        [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
+       "Karaoke Torii - CODAworx"]]]]
+
      [:div.section.pointer
       (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
       [:a {:href "http://proto.pilotz.jp/sticky-watch"} "Sticky Watch"]
@@ -86,19 +96,13 @@
        [:div.desc
         [:h1 "Sticky Watch"]
         [:p "An electronic replacement for sticky-notes. Records up to 5 short voice messages. I designed and made the board, case, and cover so it's 99% DIY"]]]]
-     
+
      [:div.section.pointer
       (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches efficient. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
       [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]
       [:div.detail
        (img-flex "images/3dpnp.jpg")]]
-     
-     [:div.section.pointer
-      (img-desc "images/solar-hut-project.png" [:p "Let's live primitive with technology. The solar hut set can power a light, fan, and computers"])
-      "Solar Hut Project"
-      [:div.detail
-       (img-flex "images/solar-hut-project.png")]]
-     
+
      [:div.section.pointer
       (img "images/electronics-club.png" "images/drawbot-with-kids.jpg")
       [:a {:href "http://proto.pilotz.jp/electronics"} "Kamiyama Electronics Club"]
@@ -107,10 +111,10 @@
        [:div.desc
         [:h1 "Kamiyama Electronic Kids"]
         [:p "Every Thursday afterschool, we gather and play with electronics and computers. Check out the website to see some of the projects we did."]]]]
-     
+
      [:div.belt
       "A planet with no boundary between technology and nature"]
-     
+
      [:section.section
       [:h2 "Contacts"]
       [:ul
@@ -214,7 +218,7 @@
 
      [:div.belt
       "Stop stopping and reflecting. Live vigorously uninhibited."]
-     
+
      [:div.section
       [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
      [:div.section.pointer
@@ -229,7 +233,7 @@
       [:div#section-gallery
        [:div.content ]]
       [:a {:href "http://proto.pilotz.jp/"} "PILOT PROTO LAB"]]
-     
+
      (comment
        [:div.section
        (img "images/s-exploration.png")

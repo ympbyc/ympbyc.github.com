@@ -13,10 +13,12 @@
 (defn -main
   [& args]
   (spit "index.html" (idx/main-html))
-  (spit "twofifteen.html" (twf/main-html))
+  (spit "works.html" (idx/main-html :omit-header true))
+  ;;(spit "twofifteen.html" (twf/main-html)
+  )
 
   (doseq [blog (drop 1 blogs)]
     (spit (str "blog/" (.getName blog) ".html")
           (load-file (str "src/web/blog/" (.getName blog)))))
   (spit "contents.html"
-        (contents-html (map #(str "blog/" (.getName %) ".html") (drop 1 blogs)))))
+        (contents-html (map #(str "blog/" (.getName %) ".html") (drop 1 blogs))))

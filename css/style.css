@@ -422,9 +422,10 @@ ul.no {
 .detail {
     display: none;
     position: relative;
-    margin: 10% 5%;
+    margin: 5%;
     color: #000;
     font-family: baramond;
+    height: 100%;
 }
 
 .detail img {
@@ -432,7 +433,7 @@ ul.no {
 }
 .detail>.desc {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
 }
 .detail>.desc>* {
     background: #fff;

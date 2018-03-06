@@ -251,7 +251,7 @@
    [:div#dissolver {:data-alpha 0}
     (when-not omit-header (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993-"))
     (if omit-header
-      [:div#content.flexbox {:style "padding:0"} (works)]
+      [:div#content.flexbox {:style "padding-bottom:0"} (works)]
       (body-content))
     [:div#overlay]]
    (hp/include-js  "js/torus.js")])

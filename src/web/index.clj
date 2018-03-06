@@ -253,7 +253,7 @@
     (if omit-header
       [:div#content.flexbox {:style "padding-bottom:0"} (works)]
       (body-content))
-    [:div#overlay]]
+    [:div#overlay (when omit-header {:style "top:0"})]]
    (hp/include-js  "js/torus.js")])
 
 

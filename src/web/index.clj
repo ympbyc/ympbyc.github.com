@@ -17,7 +17,7 @@
    [:div.image {:style (str "background-image: url(" src ");")}]])
 
 (defn img-flex [& srcs]
-  [:div.flexbox.no-wrap.align-top (map (fn [src] [:img {:src src :alt src}]) srcs)])
+  [:div.flexbox.align-top (map (fn [src] [:img {:src src :alt src}]) srcs)])
 
 (def menu
   [:div#menu

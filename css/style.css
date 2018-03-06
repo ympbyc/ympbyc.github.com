@@ -432,7 +432,7 @@ ul.no {
     max-height: 500px;
 }
 .detail>.desc {
-    position: absolute;
+    position: fixed;
     bottom: 10%;
 }
 .detail>.desc>* {

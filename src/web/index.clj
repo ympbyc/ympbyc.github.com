@@ -120,11 +120,11 @@
 
    [:div.section
     (img "images/carrot-on-screen.png"
-         "images/special-relativity.jpg")
+         "images/carrot-primes.png")
     [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot - purely functional left-associative lisp"]]
 
    [:div.section
-    (img "images/waves.gif" "images/carrot-primes.png")
+    (img "images/waves.gif" "images/special-relativity.jpg")
     [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]
 
 

@@ -64,6 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
         img.style.display = "none";
         document.body.appendChild(img);
     });
+
+    var headerH1 = document.querySelector("header h1");
+    var faceEl = document.querySelector(".face");
+    window.addEventListener("scroll", function (e) {
+        faceEl.style.height = (109 - Math.min(window.pageYOffset/10, 50)) + "px";
+        headerH1.style.marginTop = 0;
+        headerH1.style.paddingTop = (20 - Math.max(window.pageYOffset/10, 0)) + "px";
+    });
 });
 
 function detatchNode (node) {

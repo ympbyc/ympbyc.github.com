@@ -48,9 +48,9 @@
 
 (defn header [img title subtitle]
   [:header
-   [:img {:src img :style "float: left; margin-right: 20px; width: 109px; height: 109px;"}]
-   [:h1 title]
-   [:i subtitle]
+   [:img.face {:src img}]
+   [:div [:h1 title]
+    [:i subtitle]]
    menu])
 
 (defn works []

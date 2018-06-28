@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slideIdx = (slideIdx + 1) % slideImgs.length;
         slidesEl.style.backgroundImage = "url(" + slideImgs[slideIdx] + ")";
     }, slideTimeout);
-    requestAnimationFrame(function loop () {
+    function loop () {
         requestAnimationFrame(loop);
         var sin = (Math.sin(t)/2 + 1/2);
         var size = slidesSizes[slideIdx];
@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var amplitude = size.height * hCorrection - rects.slides.height;
         slidesEl.style.backgroundPosition = "0 " + -(amplitude * sin) + "px";
         t += 1/100;
-    });
+    }
+    requestAnimationFrame(loop);
 
 
     function genAllRects () {

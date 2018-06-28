@@ -59,7 +59,7 @@
     "ART"]
 
    [:div.section.pointer.double-w
-    (img "images/dfk-action.png" "images/dfk-koyomanmaku.png")
+    (img "images/dfk-action.png" "images/fusuma-bunka.jpg")
     [:a {:href "https://youtu.be/a671ua0ELFU"} "Digital Fusuma Karakuri"]
     [:div.detail.no-transition
      [:iframe {:width "560" :height "315" :src "https://www.youtube.com/embed/a671ua0ELFU" :frameborder "0" :allow "autoplay; encrypted-media" :allowfullscreen true :style "display:block;margin:0 auto"}]

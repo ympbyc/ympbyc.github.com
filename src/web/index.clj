@@ -55,7 +55,10 @@
 
 (defn works []
   (list
-   [:div.section.pointer
+   [:div.belt
+    "ART"]
+
+   [:div.section.pointer.double-w
     (img "images/dfk-action.png" "images/dfk-koyomanmaku.png")
     [:a {:href "https://youtu.be/a671ua0ELFU"} "Digital Fusuma Karakuri"]
     [:div.detail.no-transition
@@ -63,15 +66,7 @@
      [:div.desc
       [:h1 "Digital Fusuma Karakuri"]
       [:p "Website coming soon"]]]]
-   [:div.section.pointer
-    (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
-    [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]
-    [:div.detail
-     (img-flex "images/makerfaire2.jpg"
-               "images/makerfaire.jpg")
-     [:div.desc
-      [:h1 "Maker Faire Tokyo 2017"]
-      [:p "I brought some sticky-watches and the 3D-PnP to show off to the makers in Japan.  I had a lot of fun with people sharing enthusiasm."]]]]
+
 
    [:div.section.pointer
     (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
@@ -84,6 +79,119 @@
       [:p "In january 2017, Benoit Maubrey, Gerrit de Vries, and I produced this monsterous sculpture or objet.  The objet has a bluetooth port open everyday which anybody can connect with his/her phone to play their favorite music."]
       [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
        "Karaoke Torii - CODAworx"]]]]
+
+   [:div.belt "COMPUTER SCIENCE"]
+
+   [:div.section
+    (img "images/smalltalk.jpg")]
+
+   [:section.section
+    [:h2 "Software Projects"]
+    [:table
+     [:tr
+      [:th [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot"]]
+      [:td "Purely Functional Lisp w/ static multimethod"]]
+     [:tr
+      [:th [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
+      [:td "Write JavaScript in Smalltalk's Syntax"]]
+     [:tr
+      [:th [:a {:href "http://proto.pilotz.jp/bird"} "Bird"]]
+      [:td "Frontend IDE for kakahiaka"]]
+     [:tr
+      [:th [:a {:href "https://github.com/ympbyc/kakahiaka"} "kakahiaka"]]
+      [:td "Client side functional GUI programming"]]
+     [:tr
+      [:th [:a {:href "https://github.com/ympbyc/underscore-fix"} "Underscore-fix"]]
+      [:td "Underscore extensions for serious FP"]]
+     [:tr
+      [:th [:a {:href "https://github.com/ympbyc/js-clos"} "JS-CLOS"]]
+      [:td "Multimethod in JavaScript"]]
+     [:tr
+      [:th [:a {:href "https://github.com/typedclojure/core.typed"} "Typed Clojure"]]
+      [:td "Optional type system (GSoC 2013 participant)"]]
+     (comment
+       [:tr
+        [:th [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"]]
+        [:td "Roguelike written in Biwascheme (incomplete)"]]
+       [:tr
+        [:th [:a {:href "http://ympbyc.github.io/coffeehack/build"} "coffeehack"]]
+        [:td "Roguelike written in Coffeescript (abandoned)"]])
+     ]]
+
+   [:div.section
+    (img "images/carrot-on-screen.png"
+         "images/special-relativity.jpg")
+    [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot - purely functional left-associative lisp"]]
+
+   [:div.section
+    (img "images/waves.gif" "images/carrot-primes.png")
+    [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]
+
+
+   [:div.section
+    [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/VnrXc3nVjkc":frameborder 0 :allowfullscreen true}]
+    [:a {:href "http://ympbyc.hatenablog.com/entry/lazy-programmer-and-dynamic-development"} "Bird - a dynamic front-end js programming environment"]]
+
+   [:div#links.section
+    [:div.slide
+     [:script.speakerdeck-embed
+      {:async      true
+       :data-id    "6e9fc0503251013041d412313d06f1ad"
+       :data-ratio "1.33333333333333"
+       :src        "//speakerdeck.com/assets/embed.js"}]]]
+   ))
+
+(defn body-content []
+  [:div#content.flexbox
+   (works)
+
+   [:div.belt "INFO"]
+
+   [:section.section
+    [:h2 "Contacts"]
+    [:ul
+     [:li "<" [:a {:href "mailto:ympbyc@gmail.com"} "ympbyc@gmail.com"] ">"]
+     [:li [:a {:href "http://twitter.com/ympbyc"} "@ympbyc"]]]
+    [:h2 "Resumé"]
+    [:a {:href "resume.html"} "Resumé in English"] [:br]
+    [:a {:href "vault/resume.html"} "Resumé in Japanese 日本語履歴書"]]
+
+   [:section.section
+    [:h2 "Skills"]
+    [:ul
+     [:li "Fluent in Japanese & English"]
+     [:li "Analog & Digital circuit design"]
+     [:li "Scheme, Clojure, JavaScript + many more"]
+     [:li "Creative coding"]
+     [:li "Toss juggling"]]]
+
+   [:section.section
+    [:h2 "See Also (Links)"]
+    [:ul
+     [:li [:a {:href "https://github.com/ympbyc"} "GitHub"]]
+     [:li [:a {:href "http://d.hatena.ne.jp/ympbyc"} "標高+1m (blog)"]]
+     [:li [:a {:href "https://www.youtube.com/channel/UCoZPJbl8xxx8OSo7KSy29vA"} "Youtube (Minori Yamashita)"]]
+     [:li [:a {:href  "https://mechanic.pilotz.jp"} "Mechanic Note (company blog)"]]
+     [:li [:a {:href "https://www.youtube.com/channel/UCoZPJbl8xxx8OSo7KSy29vA"} "Youtube (proto lab)"]]
+     [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Facebook (Minori Yamashita)"]]]]
+
+   [:div.belt
+    "OTHER PROJECTS"]
+
+   [:div.section
+    [:div#section-gallery
+     [:div.content ]]
+    [:a {:href "http://proto.pilotz.jp/"} "PILOT PROTO LAB"]]
+
+   [:div.section.pointer
+    (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
+    [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]
+    [:div.detail
+     (img-flex "images/makerfaire2.jpg"
+               "images/makerfaire.jpg")
+     [:div.desc
+      [:h1 "Maker Faire Tokyo 2017"]
+      [:p "I brought some sticky-watches and the 3D-PnP to show off to the makers in Japan.  I had a lot of fun with people sharing enthusiasm."]]]]
 
    [:div.section.pointer
     (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
@@ -107,122 +215,13 @@
      (img-flex "images/electronics-club.png" "images/drawbot-with-kids.jpg")
      [:div.desc
       [:h1 "Kamiyama Electronic Kids"]
-      [:p "Every Thursday afterschool, we gather and play with electronics and computers. Check out the website to see some of the projects we did."]]]]))
-
-(defn body-content []
-  [:div#content.flexbox
-   (works)
-
-   [:div.belt
-    "A planet with no boundary between technology and nature"]
-
-   [:section.section
-    [:h2 "Contacts"]
-    [:ul
-     [:li "<" [:a {:href "mailto:ympbyc@gmail.com"} "ympbyc@gmail.com"] ">"]
-     [:li [:a {:href "http://twitter.com/ympbyc"} "@ympbyc"]]]
-    [:h2 "Resumé"]
-    [:a {:href "resume.html"} "Resumé in English"] [:br]
-    [:a {:href "vault/resume.html"} "Resumé in Japanese 日本語履歴書"]]
-   [:div.section
-    (img "images/business-card.png" "images/business-card-back.png")
-    "Business Card"]
-   [:section.section
-    [:h2 "Currently"]
-    [:ul [:li [:a {:href "http://proto.pilotz.jp/"} "PILOT Proto Lab"]]]
-    [:h2 "Education"]
-    [:ul
-     [:li [:a {:href "http://www.sierracollege.edu/"} "Sierra College CompSci - Dropout"]]
-     [:li [:a {:href "http://www.lynfield.school.nz/"} "Lynfield College"]]]]
-   [:section.section
-    [:h2 "Skills"]
-    [:ul
-     [:li "Fluent in Japanese & English"]
-     [:li "Analog & Digital circuit design"]
-     [:li "Lisp: (Clojure & Scheme)"]
-     [:li "JavaScript, SML, PHP, + many more"]
-     [:li "Toss juggling"]]]
-   [:div.section
-    (img "images/smalltalk.jpg")]
-   [:section.section
-    [:h2 "Things I love"]
-    [:ul
-     [:li "Making/Art"]
-     [:li "Forest Making"]
-     [:li "Electronics Experiments"]
-     [:li "Spacetime Geometry"]
-     [:li "IoT as a Computational Resource"]
-     [:li "Autogyro"]
-     [:li "Psychedelics"]]]
-   [:div.belt
-    "Flip the universe inside out leaving behind everything I knew."]
-   [:div.section
-    (img "images/waves.gif" "images/special-relativity.jpg")
-    [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]
-   [:section.section
-    [:h2 "Software Projects"]
-    [:table
-     [:tr
-      [:td [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot"]]
-      [:td "Purely Functional Lisp w/ static multimethod"]]
-     [:tr
-      [:td [:a {:href "https://github.com/typedclojure/core.typed"} "Typed Clojure"]]
-      [:td "Optional typing in Clojure. I worked on the clojurescript checker"]]
-     [:tr
-      [:td [:a {:href "http://ympbyc.github.io/LittleSmallscript"} "LittleSmallscript"]]
-      [:td "Write JavaScript in Smalltalk's Syntax"]]
-     [:tr
-      [:td [:a {:href "http://proto.pilotz.jp/bird"} "Bird"]]
-      [:td "Frontend IDE for kakahiaka"]]
-     [:tr
-      [:td [:a {:href "https://github.com/ympbyc/kakahiaka"} "kakahiaka"]]
-      [:td "Client side functional GUI programming"]]
-     [:tr
-      [:td [:a {:href "https://github.com/ympbyc/underscore-fix"} "Underscore-fix"]]
-      [:td "Underscore.js extensions for serious functional programming"]]
-     [:tr
-      [:td [:a {:href "https://github.com/ympbyc/js-clos"} "JS-CLOS"]]
-      [:td "Multimethod in JavaScript"]]
-     (comment
-       [:tr
-        [:td [:a {:href "https://github.com/ympbyc/vorpalblade"} "vorpalblade"]]
-        [:td "Roguelike written in Biwascheme (incomplete)"]]
-       [:tr
-        [:td [:a {:href "http://ympbyc.github.io/coffeehack/build"} "coffeehack"]]
-        [:td "Roguelike written in Coffeescript (abandoned)"]])
-     ]]
-   [:div.section
-    [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/VnrXc3nVjkc":frameborder 0 :allowfullscreen true}]
-    [:a {:href "http://proto.pilotz.jp/bird"} "Bird"]]
-   [:div.section
-    [:div.slide
-     [:script.speakerdeck-embed
-      {:async      true
-       :data-id    "8102cd705054013132c906f96a5ccdc2"
-       :data-ratio "1.77777777777778"
-       :src        "//speakerdeck.com/assets/embed.js"}]]]
-   [:div#links.section
-    [:div.slide
-     [:script.speakerdeck-embed
-      {:async      true
-       :data-id    "6e9fc0503251013041d412313d06f1ad"
-       :data-ratio "1.33333333333333"
-       :src        "//speakerdeck.com/assets/embed.js"}]]]
-   [:section.section
-    [:h2 "See Also (Links)"]
-    [:ul
-     [:li [:a {:href "https://github.com/ympbyc"} "GitHub"]]
-     [:li [:a {:href "http://d.hatena.ne.jp/ympbyc"} "標高+1m (blog)"]]
-     [:li [:a {:href "https://www.youtube.com/channel/UCoZPJbl8xxx8OSo7KSy29vA"} "Youtube (Minori Yamashita)"]]
-     [:li [:a {:href  "https://mechanic.pilotz.jp"} "Mechanic Note (company blog)"]]
-     [:li [:a {:href "https://www.youtube.com/channel/UCoZPJbl8xxx8OSo7KSy29vA"} "Youtube (proto lab)"]]
-     [:li [:a {:href "http://www.facebook.com/minori.yamashita"} "Facebook (Minori Yamashita)"]]]]
-
-   [:div.belt
-    "Stop stopping and reflecting. Live vigorously uninhibited."]
+      [:p "Every Thursday afterschool, we gather and play with electronics and computers. Check out the website to see some of the projects we did."]]]]
 
    [:div.section
     [:iframe {:width 320 :height 230 :src "https://www.youtube.com/embed/YLwikExc_KI" :frameborder 0 :allowfullscreen true}]]
+
+   [:div.belt "EXTRA"]
+
    [:div.section.pointer
     (img "images/cactus.jpg")
     [:div.detail
@@ -235,16 +234,18 @@
     (img "images/painting/nakaurawa.png")
     [:div.detail
      (img-flex "images/painting/nakaurawa.png")]]
-   [:div.section
-    [:div#section-gallery
-     [:div.content ]]
-    [:a {:href "http://proto.pilotz.jp/"} "PILOT PROTO LAB"]]
 
-   (comment
-     [:div.section
-      (img "images/s-exploration.png")
-      [:a {:href "http://ympbyc.github.io/s-exploration"}
-       "S-exploration"]])])
+   [:div.section
+    (img "images/vopal-blade.png" "images/vopal-source.png")
+    "Brogue clone written in scheme"]
+
+   [:div.section
+    (img "images/us.jpg")
+    "Me and my wife"]
+
+   [:div.section
+    [:img {:src "images/lisplogo_warning2.png"}]
+    "This website is built using LISP"]])
 
 (defn html-body [omit-header]
   [:body {:onload "/*prettyPrint()*/"}

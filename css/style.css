@@ -64,8 +64,10 @@ hr {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
+    margin: 2px 0 4px 0;
+    padding: 0;
 }
 
 pre {
@@ -106,6 +108,8 @@ dd {
 small {
     font-size: 0.7em;
 }
+
+td { font-size: 0.8em; font-weight: 200; padding-left: 2px}
 
 .code {
     border: 1px solid #a3a3a3;
@@ -186,6 +190,14 @@ small {
         margin: 0 auto;
     }
 
+.section.double-w {
+    max-width: 60%;
+    width: 800px;
+}
+@media screen and (max-width: 1020px) {
+    .section.double-w { max-width: 320px; }
+}
+
 #menu {
     position:absolute;
     right: 30px;
@@ -241,7 +253,7 @@ ul {
 
 
 .slide {
-    min-height: 300px;
+    min-height: 200px;
 }
 
 /* Google code prettifier */
@@ -400,9 +412,9 @@ ul.no {
 }
 
 
-.belt {
+#content > .belt {
     width: 100%;
-    margin: 0 55px;
+    margin: 20px 55px 0;
     background-color: rgba(0,0,0,0.7);
     padding: 0.2em;
     text-align: center;

@@ -132,7 +132,7 @@
     [:iframe {:width 320 :height 180 :src "https://www.youtube.com/embed/VnrXc3nVjkc":frameborder 0 :allowfullscreen true}]
     [:a {:href "http://ympbyc.hatenablog.com/entry/lazy-programmer-and-dynamic-development"} "Bird - a dynamic front-end js programming environment"]]
 
-   [:div#links.section
+   [:div.section
     [:div.slide
      [:script.speakerdeck-embed
       {:async      true
@@ -145,7 +145,7 @@
   [:div#content.flexbox
    (works)
 
-   [:div.belt "INFO"]
+   [:div#links.belt "INFO"]
 
    [:section.section
     [:h2 "Contacts"]

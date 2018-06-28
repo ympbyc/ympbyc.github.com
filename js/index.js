@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
         if (alpha < 1) {
             requestAnimationFrame(dissolve);
-            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha + 0.02) + ")";
+            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha + 0.06) + ")";
             dissolver.setAttribute("data-alpha", alpha + 0.02);
             return;
         }
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
         if (alpha > 0) {
             requestAnimationFrame(clear);
-            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha - 0.02) + ")";
+            dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha - 0.06) + ")";
             dissolver.setAttribute("data-alpha", alpha - 0.02);
             return;
         }

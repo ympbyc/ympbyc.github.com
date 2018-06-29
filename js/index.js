@@ -22,13 +22,19 @@ document.addEventListener("DOMContentLoaded", function () {
     var dissolver = document.querySelector("#dissolver");
     var body = document.body;
     var i = 0;
+    var frame = 0;
 
     function dissolve () {
+        if (frame++ % 3 < 2) {
+            requestAnimationFrame(dissolve);
+            return;
+        }
+
         var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
         if (alpha < 1) {
             requestAnimationFrame(dissolve);
             dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha + 0.06) + ")";
-            dissolver.setAttribute("data-alpha", alpha + 0.02);
+            dissolver.setAttribute("data-alpha", alpha + 0.08);
             return;
         }
         body.style.backgroundImage = "url(" + images[i % images.length] + ")";
@@ -36,11 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function clear () {
+        if (frame++ % 3 < 2) {
+            requestAnimationFrame(clear);
+            return;
+        }
         var alpha = parseFloat(dissolver.getAttribute("data-alpha"));
         if (alpha > 0) {
             requestAnimationFrame(clear);
             dissolver.style.backgroundColor = "rgba(255,255,255," + (alpha - 0.06) + ")";
-            dissolver.setAttribute("data-alpha", alpha - 0.02);
+            dissolver.setAttribute("data-alpha", alpha - 0.08);
             return;
         }
     }
@@ -49,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         i++;
         requestAnimationFrame(dissolve);
-    }, 20000);
+    }, 60000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,14 +97,20 @@ function animateStyle (el, accessors, prop, before, after, init, stop, step, cb)
     var obj = _.foldl(accessors, function (prop, accsr) {
         return prop[accsr];
     }, el);
-    requestAnimationFrame(anim = function () {
+    var frame = 0;
+    function anim () {
+        if (frame++ % 2 == 0) {
+            requestAnimationFrame(anim);
+            return;
+        }
         if ((init < stop && x >= stop)
             || (init > stop && x <= stop))
         { cb(); return; }
         requestAnimationFrame(anim);
         obj[prop] = before + x + after;
         x += step;
-    });
+    }
+    requestAnimationFrame(anim);
 }
 
 document.addEventListener("DOMContentLoaded", function () {

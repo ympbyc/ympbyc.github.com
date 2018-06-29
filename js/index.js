@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             overlay.appendChild(node);
             overlay.style.visibility = "visible";
             node.style.display = "block";
+            overlay.style.top = parseInt(window.getComputedStyle(document.querySelector("header")).height) + "px";
             if (detail.classList.contains("no-transition"))
                 overlay.style.opacity = 1;
             else

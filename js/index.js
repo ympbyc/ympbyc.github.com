@@ -13,12 +13,11 @@ document.addEventListener("mouseover", alternate);
 document.addEventListener("mouseout", alternate);
 
 
-var images = ["images/river.jpg",
+var images = ["images/fusuma-led.jpg",
+              "images/river.jpg",
               "images/outdoor-electronics.jpg",
-              "images/fusuma-bunka.jpg",
               "images/outdoor-cooking.jpg",
-              "images/tanabata.jpg",
-              "images/fusuma-led.jpg"];
+              "images/tanabata.jpg"];
 
 
 document.addEventListener("DOMContentLoaded", function () {

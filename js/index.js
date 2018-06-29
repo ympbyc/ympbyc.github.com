@@ -13,10 +13,13 @@ document.addEventListener("mouseover", alternate);
 document.addEventListener("mouseout", alternate);
 
 
-var images = ["images/outdoor-electronics.jpg",
-              "images/river.jpg",
+var images = ["images/river.jpg",
+              "images/outdoor-electronics.jpg",
+              "images/fusuma-bunka.jpg",
               "images/outdoor-cooking.jpg",
-              "images/tanabata.jpg"];
+              "images/tanabata.jpg",
+              "images/fusuma-led.jpg"];
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var dissolver = document.querySelector("#dissolver");

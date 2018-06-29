@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         i++;
         requestAnimationFrame(dissolve);
-    }, 60000);
+    }, 120000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {

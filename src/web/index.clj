@@ -59,11 +59,6 @@
    [:div.belt
     "ART"]
 
-   [:div.section
-    [:iframe {:width "320" :height "210" :src "https://www.youtube-nocookie.com/embed/JGrlR2qDwa8"
-             :frameborder "0" :allow "encrypted-media" :allowfullscreen true}]
-    [:span "Shader Art"]]
-
    [:div.section.pointer
     (img "images/dfk-action.png" "images/fusuma-bunka.jpg")
     [:a {:href "https://youtu.be/a671ua0ELFU"} "Digital Fusuma Karakuri"]
@@ -72,6 +67,11 @@
      [:div.desc
       [:h1 "Digital Fusuma Karakuri"]
       [:p "Website coming soon"]]]]
+
+   [:div.section
+    [:iframe {:width "320" :height "210" :src "https://www.youtube-nocookie.com/embed/JGrlR2qDwa8"
+             :frameborder "0" :allow "encrypted-media" :allowfullscreen true}]
+    [:span "Shader Art"]]
 
 
    [:div.section.pointer

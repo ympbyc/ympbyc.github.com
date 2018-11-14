@@ -59,7 +59,7 @@
    [:div.belt
     "ART"]
 
-   [:div.section.pointer
+   [:div.section.pointer.double-w
     (img "images/dfk-action.png" "images/fusuma-bunka.jpg")
     [:a {:href "https://youtu.be/a671ua0ELFU"} "Digital Fusuma Karakuri"]
     [:div.detail.no-transition
@@ -67,12 +67,6 @@
      [:div.desc
       [:h1 "Digital Fusuma Karakuri"]
       [:p "Website coming soon"]]]]
-
-   [:div.section
-    [:iframe {:width "320" :height "210" :src "https://www.youtube-nocookie.com/embed/JGrlR2qDwa8"
-             :frameborder "0" :allow "encrypted-media" :allowfullscreen true}]
-    [:span "Shader Art"]]
-
 
    [:div.section.pointer
     (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
@@ -85,6 +79,21 @@
       [:p "In january 2017, Benoit Maubrey, Gerrit de Vries, and I produced this monsterous sculpture or objet.  The objet has a bluetooth port open everyday which anybody can connect with his/her phone to play their favorite music."]
       [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
        "Karaoke Torii - CODAworx"]]]]
+
+   [:div.section
+    [:iframe {:width "320" :height "210" :src "https://www.youtube-nocookie.com/embed/JGrlR2qDwa8"
+             :frameborder "0" :allow "encrypted-media" :allowfullscreen true}]
+    [:span "Shader Art"]]
+
+   [:div.section
+    (img-desc "images/lpg.jpg" [:p "I made a DIY Lowpass Gate"])
+    [:a {:href "http://mechanic.pilotz.jp/2018/01/modular-synth-diy/"} "DIY Lowpass Gate"]
+    [:div.detail
+     [:iframe {:width "560" :height "315" :src "https://www.youtube.com/embed/Xi3M_a_beCM" :frameborder "0" :allow "autoplay; encrypted-media" :allowfullscreen true :style "display:block;margin:0 auto"}]]]
+
+   [:div.section
+    (img-desc "images/ubatama.jpg" [:p "My Instagram is where I post little bits of my artworks."])
+    [:a {:href "https://www.instagram.com/ympbyc/"} "instagram.com/ympbyc"]]
 
    [:div.belt "COMPUTER SCIENCE"]
 

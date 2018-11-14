@@ -85,7 +85,7 @@
              :frameborder "0" :allow "encrypted-media" :allowfullscreen true}]
     [:span "Shader Art"]]
 
-   [:div.section
+   [:div.section.pointer
     (img-desc "images/lpg.jpg" [:p "I made a DIY Lowpass Gate"])
     [:a {:href "http://mechanic.pilotz.jp/2018/01/modular-synth-diy/"} "DIY Lowpass Gate"]
     [:div.detail

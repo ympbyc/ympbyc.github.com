@@ -43,7 +43,7 @@
    (hp/include-js  "js/font-helvetiker.js")
    [:meta {:property "og:title" :content "ympbyc -- Minori Yamashita"}]
    [:meta {:property "og:description" :content "Portfolio Minori Yamashita a private researcher"}]
-   [:meta {:property "og:image" :content "https://ympbyc.github.io/images/business-card.png"}]
+   [:meta {:property "og:image" :content "https://ympbyc.github.io/images/sticky-watch.jpg"}]
    [:meta {:property "og:sime_name" :content "ympbyc -- Minori Yamashita"}]
    [:meta {:property "og:type" :content "website"}]])
 

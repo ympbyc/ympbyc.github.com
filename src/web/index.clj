@@ -240,7 +240,7 @@
    [:div.section.pointer
     (img "images/germination.jpg")
     [:div.detail
-     (img-flex "images/cactus.jpg")]]
+     (img-flex "images/germination.jpg")]]
    [:div.section.pointer
     (img "images/painting/tajimahikawa.png")
     [:div.detail

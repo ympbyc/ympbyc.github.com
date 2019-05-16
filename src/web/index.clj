@@ -238,7 +238,7 @@
    [:div.belt "EXTRA"]
 
    [:div.section.pointer
-    (img "images/cactus.jpg")
+    (img "images/germination.jpg")
     [:div.detail
      (img-flex "images/cactus.jpg")]]
    [:div.section.pointer

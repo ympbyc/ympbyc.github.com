@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
-    setInterval(function () {
+    
+    /*setInterval(function () {
         i++;
         requestAnimationFrame(dissolve);
-    }, 120000);
+    }, 120000);*/
 });
 
 document.addEventListener("DOMContentLoaded", function () {

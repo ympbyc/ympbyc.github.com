@@ -23,8 +23,8 @@
   [:div#menu
    [:a.btn.btn-blue.page {:href "/"} "Top"]
    [:a.btn.btn-blue.page {:href "#links"} "Links"]
-   [:a.btn.btn-blue.page {:href "http://ympbyc.hatenablog.com/"} "Blog1 (Ja)"]
-   [:a.btn.btn-blue.page {:href "http://mechanic.pilotz.jp/"} "Blog2 (Ja)"]])
+   [:a.btn.btn-blue.page {:href "http://ympbyc.hatenablog.com/"} "Blog"]
+   [:a.btn.btn-blue.page {:href "https://ympbyc.github.io/shortblog/blog/index.html"} "Diary"]])
 
 (defn html-head []
   [:head
@@ -254,9 +254,9 @@
     (img "images/vopal-blade.png" "images/vopal-source.png")
     "Brogue clone written in scheme"]
 
-   [:div.section
+   (comment [:div.section
     (img "images/us.jpg")
-    "Me and my wife"]
+    "Me and my wife"])
 
    [:div.section
     [:img {:src "images/lisplogo_warning2.png"}]

@@ -60,7 +60,7 @@
     "ART"]
 
    [:div.section.pointer.double-w
-    (img "images/dfk-action.png" "images/fusuma-bunka.jpg")
+    (img "images/thumbs/dfk-action.png" "images/thumbs/fusuma-bunka.jpg")
     [:a {:href "https://youtu.be/a671ua0ELFU"} "Digital Fusuma Karakuri"]
     [:div.detail.no-transition
      [:iframe {:width "560" :height "315" :src "https://www.youtube.com/embed/shp5NshM4p0" :frameborder "0" :allow "autoplay; encrypted-media" :allowfullscreen true :style "display:block;margin:0 auto"}]
@@ -69,7 +69,7 @@
       [:p "Website coming soon"]]]]
 
    [:div.section.pointer
-    (img-desc "images/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
+    (img-desc "images/thumbs/torii.jpg" [:p "An objet made out of hundreds of waste speakers.  See the link below for details."])
     [:a {:href "https://www.codaworx.com/project/karaoke-kamiyama-artist-in-residence-kair-program"}
      "Jan 2017 Karaoke Torii w/ Die Audio Gruppe"]
     [:div.detail
@@ -86,19 +86,19 @@
     [:span "Shader Art"]]
 
    [:div.section.pointer
-    (img-desc "images/lpg.jpg" [:p "I made a DIY Lowpass Gate"])
+    (img-desc "images/thumbs/lpg.jpg" [:p "I made a DIY Lowpass Gate"])
     [:a {:href "http://mechanic.pilotz.jp/2018/01/modular-synth-diy/"} "DIY Lowpass Gate"]
     [:div.detail
      [:iframe {:width "560" :height "315" :src "https://www.youtube.com/embed/Xi3M_a_beCM" :frameborder "0" :allow "autoplay; encrypted-media" :allowfullscreen true :style "display:block;margin:0 auto"}]]]
 
    [:div.section
-    (img-desc "images/ubatama.jpg" [:p "My Instagram is where I post little bits of my artworks."])
+    (img-desc "images/thumbs/ubatama.jpg" [:p "My Instagram is where I post little bits of my artworks."])
     [:a {:href "https://www.instagram.com/ympbyc/"} "instagram.com/ympbyc"]]
 
    [:div.belt "COMPUTER SCIENCE"]
 
    [:div.section
-    (img "images/smalltalk.jpg")]
+    (img "images/thumbs/smalltalk.jpg")]
 
    [:section.section
     [:h2 "Software Projects"]
@@ -134,12 +134,12 @@
      ]]
 
    [:div.section
-    (img "images/carrot-on-screen.png"
-         "images/carrot-primes.png")
+    (img "images/thumbs/carrot-on-screen.png"
+         "images/thumbs/carrot-primes.png")
     [:a {:href "https://github.com/ympbyc/Carrot"} "Carrot - purely functional left-associative lisp"]]
 
    [:div.section
-    (img "images/waves.gif" "images/special-relativity.jpg")
+    (img "images/waves.gif" "images/thumbs/special-relativity.jpg")
     [:a {:href "http://ympbyc.hatenablog.com/entry/we-need-more-space"} "We Need More Space!"]]
 
 
@@ -199,7 +199,7 @@
     [:a {:href "http://proto.pilotz.jp/"} "PILOT PROTO LAB"]]
 
    [:div.section.pointer
-    (img "images/makerfaire2.jpg" "images/makerfaire.jpg")
+    (img "images/thumbs/makerfaire2.jpg" "images/thumbs/makerfaire.jpg")
     [:a {:href "http://makezine.jp/event/makers2017/m0078/"} "Maker Faire Tokyo 2017"]
     [:div.detail
      (img-flex "images/makerfaire2.jpg"
@@ -209,7 +209,7 @@
       [:p "I brought some sticky-watches and the 3D-PnP to show off to the makers in Japan.  I had a lot of fun with people sharing enthusiasm."]]]]
 
    [:div.section.pointer
-    (img-desc "images/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
+    (img-desc "images/thumbs/sticky-watch.jpg" [:p "Quick and easy voice memo device. Email me if you want to purchase one."])
     [:a {:href "http://proto.pilotz.jp/sticky-watch"} "Sticky Watch"]
     [:div.detail
      (img-flex "images/sticky-watch.jpg")
@@ -218,13 +218,13 @@
       [:p "An electronic replacement for sticky-notes. Records up to 5 short voice messages. I designed and made the board, case, and cover so it's 99% DIY"]]]]
 
    [:div.section.pointer
-    (img-desc "images/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches efficient. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
+    (img-desc "images/thumbs/3dpnp.jpg" [:p "I hacked my 3D printer into an pick-n-place machine to make producing sticky-watches efficient. An open source software I developed converts Eagle partlist file into GCode: " [:a {:href "https://github.com/ympbyc/3dpnp"} "GitHub/ympbyc/3DPnP"]])
     [:a {:href "https://github.com/ympbyc/3dpnp"} "DIY Pick and Place Machine"]
     [:div.detail
      (img-flex "images/3dpnp.jpg")]]
 
    [:div.section.pointer
-    (img "images/electronics-club.png" "images/drawbot-with-kids.jpg")
+    (img "images/thumbs/electronics-club.png" "images/thumbs/drawbot-with-kids.jpg")
     [:a {:href "http://proto.pilotz.jp/electronics"} "Kamiyama Electronics Club"]
     [:div.detail
      (img-flex "images/electronics-club.png" "images/drawbot-with-kids.jpg")
@@ -238,25 +238,25 @@
    [:div.belt "EXTRA"]
 
    [:div.section.pointer
-    (img "images/germination.jpg")
+    (img "images/thumbs/germination.jpg")
     [:div.detail
      (img-flex "images/germination.jpg")]]
    [:div.section.pointer
-    (img "images/painting/tajimahikawa.png")
+    (img "images/painting/thumbs/tajimahikawa.png")
     [:div.detail
      (img-flex "images/painting/tajimahikawa.png")]]
    [:div.section.pointer
-    (img "images/painting/nakaurawa.png")
+    (img "images/painting/thumbs/nakaurawa.png")
     [:div.detail
      (img-flex "images/painting/nakaurawa.png")]]
 
    [:div.section
-    (img "images/vopal-blade.png" "images/vopal-source.png")
-    "Brogue clone written in scheme"]
+    (img "images/thumbs/vopal-blade.png" "images/thumbs/vopal-source.png")
+    "Biwascheme Practice"]
 
-   (comment [:div.section
-    (img "images/us.jpg")
-    "Me and my wife"])
+   [:div.section
+    (img "images/thumbs/us.jpg")
+    "Me and my wife"]
 
    [:div.section
     [:img {:src "images/lisplogo_warning2.png"}]
@@ -265,7 +265,7 @@
 (defn html-body [omit-header]
   [:body {:onload "/*prettyPrint()*/"}
    [:div#dissolver {:data-alpha 0}
-    (when-not omit-header (header "images/face.jpg" "ympbyc" "Minori Yamashita 1993-"))
+    (when-not omit-header (header "images/thumbs/face.jpg" "ympbyc" "Minori Yamashita 1993-"))
     (if omit-header
       [:div#content.flexbox {:style "padding-bottom:0"} (works)]
       (body-content))
